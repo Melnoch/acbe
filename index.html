@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Lire jusqu'à ce que ce soit fluide</h1>
-    <div><i>Clique sur la lettre ou le mot pour entendre la prononciation</i></div>
+    <div><i>Cliquer sur la lettre ou le mot pour entendre la prononciation</i></div>
     <div class="wrapper">
         <img id="01" src="media/pictures/01.png" onclick="play('01_audio')"/>
         <img id="02" src="media/pictures/02.png" onclick="play('02_audio')"/>
@@ -37,7 +37,7 @@
     <div class="right">
         <img src="media/pictures/h_instruction.png"/>
     </div>
-    <div><i>Clique sur le mot pour entendre la prononciation</i></div>
+    <div><i>Cliquer sur le mot pour entendre la prononciation</i></div>
     <div class="wrapper">
         <img id="01" src="media/pictures/h_01.png" onclick="play('h_01_audio')"/>
         <img id="02" src="media/pictures/h_02.png" onclick="play('h_02_audio')"/>
@@ -50,6 +50,63 @@
         <img src="media/pictures/hc_02.png"/>
         <img src="media/pictures/hc_03.png"/>
         <img src="media/pictures/hc_04.png"/>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="right">
+        <img src="media/pictures/p_instruction.png"/>
+    </div>
+    <div><i>Cliquer sur l'image pour entendre la prononciation</i></div>
+    <div class="wrapper">
+        <img id="01" src="media/pictures/p_01.png" onclick="play('p_01_audio')"/>
+        <img id="02" src="media/pictures/p_02.png" onclick="play('p_02_audio')"/>
+        <img id="03" src="media/pictures/p_03.png" onclick="play('p_03_audio')"/>
+        <img id="04" src="media/pictures/p_04.png" onclick="play('p_04_audio')"/>
+        <img id="05" src="media/pictures/p_05.png" onclick="play('p_05_audio')"/>
+        <img id="06" src="media/pictures/p_06.png" onclick="play('p_06_audio')"/>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="right">
+        <img src="media/pictures/w_instruction.png"/>
+    </div>
+    <div class="wrapper">
+        <img id="01" src="media/pictures/w_01.png"/>
+        <img id="02" src="media/pictures/w_02.png"/>
+        <img id="03" src="media/pictures/w_03.png"/>
+        <img id="04" src="media/pictures/w_04.png"/>
+        <img id="05" src="media/pictures/w_05.png"/>
+    </div>
+    <button id="show-word-correction" onclick="display('word-correction')">Montrer la correction</button>
+    <div id="word-correction" class="wrapper hide">
+        <img src="media/pictures/wc_01.png"/>
+        <img src="media/pictures/wc_02.png"/>
+        <img src="media/pictures/wc_03.png"/>
+        <img src="media/pictures/wc_04.png"/>
+        <img src="media/pictures/wc_05.png"/>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="right">
+        <img src="media/pictures/l_instruction.png"/>
+    </div>
+    <div class="wrapper">
+        <img id="01" src="media/pictures/l_01.png"/>
+        <img id="02" src="media/pictures/l_02.png"/>
+        <img id="03" src="media/pictures/l_03.png"/>
+        <img id="04" src="media/pictures/l_04.png"/>
+        <img id="05" src="media/pictures/l_05.png"/>
+    </div>
+    <button id="show-link-correction" onclick="display('link-correction')">Montrer la correction</button>
+    <div id="link-correction" class="wrapper hide">
+        <img src="media/pictures/lp_01.png"/>
+        <img src="media/pictures/lp_02.png"/>
+        <img src="media/pictures/lp_03.png"/>
+        <img src="media/pictures/lp_04.png"/>
+        <img src="media/pictures/lp_05.png"/>
     </div>
     <audio id="01_audio" src="media/audio/01.m4a"></audio>
     <audio id="02_audio" src="media/audio/02.m4a"></audio>
@@ -77,6 +134,12 @@
     <audio id="h_02_audio" src="media/audio/h_02.m4a"></audio>
     <audio id="h_03_audio" src="media/audio/h_03.m4a"></audio>
     <audio id="h_04_audio" src="media/audio/h_04.m4a"></audio>
+    <audio id="p_01_audio" src="media/audio/p_01.m4a"></audio>
+    <audio id="p_02_audio" src="media/audio/p_02.m4a"></audio>
+    <audio id="p_03_audio" src="media/audio/p_03.m4a"></audio>
+    <audio id="p_04_audio" src="media/audio/p_04.m4a"></audio>
+    <audio id="p_05_audio" src="media/audio/p_05.m4a"></audio>
+    <audio id="p_06_audio" src="media/audio/p_06.m4a"></audio>
 </body>
 <script>
     var audio;
