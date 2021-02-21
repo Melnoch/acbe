@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="mystyle.css">
+<head>
+    <title>Mois Lunaires</title>
+</head>
+<body>
+    <h1>Lire jusqu'à ce que ce soit fluide</h1>
+    <div><i>Clique sur la lettre ou le mot pour entendre la prononciation</i></div>
+    <div class="wrapper">
+        <img id="01" src="media/pictures/01.png" onclick="play('01_audio')"/>
+        <img id="02" src="media/pictures/02.png" onclick="play('02_audio')"/>
+        <img id="03" src="media/pictures/03.png" onclick="play('03_audio')"/>
+        <img id="04" src="media/pictures/04.png" onclick="play('04_audio')"/>
+        <img id="05" src="media/pictures/05.png" onclick="play('05_audio')"/>
+        <img id="06" src="media/pictures/06.png" onclick="play('06_audio')"/>
+        <img id="07" src="media/pictures/07.png" onclick="play('07_audio')"/>
+        <img id="08" src="media/pictures/08.png" onclick="play('08_audio')"/>
+        <img id="09" src="media/pictures/09.png" onclick="play('09_audio')"/>
+        <img id="10" src="media/pictures/10.png" onclick="play('10_audio')"/>
+        <img id="11" src="media/pictures/11.png" onclick="play('11_audio')"/>
+        <img id="12" src="media/pictures/12.png" onclick="play('12_audio')"/>
+        <img id="13" src="media/pictures/13.png" onclick="play('13_audio')"/>
+        <img id="14" src="media/pictures/14.png" onclick="play('14_audio')"/>
+        <img id="15" src="media/pictures/15.png" onclick="play('15_audio')"/>
+        <img id="16" src="media/pictures/16.png" onclick="play('16_audio')"/>
+        <img id="17" src="media/pictures/17.png" onclick="play('17_audio')"/>
+        <img id="18" src="media/pictures/18.png" onclick="play('18_audio')"/>
+        <img id="19" src="media/pictures/19.png" onclick="play('19_audio')"/>
+        <img id="20" src="media/pictures/20.png" onclick="play('20_audio')"/>
+        <img id="21" src="media/pictures/21.png" onclick="play('21_audio')"/>
+        <img id="22" src="media/pictures/22.png" onclick="play('22_audio')"/>
+    </div>
+    <audio id="01_audio" src="media/audio/01.m4a"></audio>
+    <audio id="02_audio" src="media/audio/02.m4a"></audio>
+    <audio id="03_audio" src="media/audio/03.m4a"></audio>
+    <audio id="04_audio" src="media/audio/04.m4a"></audio>
+    <audio id="05_audio" src="media/audio/05.m4a"></audio>
+    <audio id="06_audio" src="media/audio/06.m4a"></audio>
+    <audio id="07_audio" src="media/audio/07.m4a"></audio>
+    <audio id="08_audio" src="media/audio/08.m4a"></audio>
+    <audio id="09_audio" src="media/audio/09.m4a"></audio>
+    <audio id="10_audio" src="media/audio/10.m4a"></audio>
+    <audio id="11_audio" src="media/audio/11.m4a"></audio>
+    <audio id="12_audio" src="media/audio/12.m4a"></audio>
+    <audio id="13_audio" src="media/audio/13.m4a"></audio>
+    <audio id="14_audio" src="media/audio/14.m4a"></audio>
+    <audio id="15_audio" src="media/audio/15.m4a"></audio>
+    <audio id="16_audio" src="media/audio/16.m4a"></audio>
+    <audio id="17_audio" src="media/audio/17.m4a"></audio>
+    <audio id="18_audio" src="media/audio/18.m4a"></audio>
+    <audio id="19_audio" src="media/audio/19.m4a"></audio>
+    <audio id="20_audio" src="media/audio/20.m4a"></audio>
+    <audio id="21_audio" src="media/audio/21.m4a"></audio>
+    <audio id="22_audio" src="media/audio/22.m4a"></audio>
+</body>
+<script>
+    var audio;
+    function play(audioId) {
+        if (audio != null) {
+            audio.pause();
+        };
+        audio = document.getElementById(audioId);
+        audio.play();
+    }
+</script>
+</html>

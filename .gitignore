@@ -1,0 +1,13 @@
+target/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+mem.lck
+mem.log
+mem.properties
+mem.script
+mem.lobs
