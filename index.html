@@ -31,6 +31,26 @@
         <img id="21" src="media/pictures/21.png" onclick="play('21_audio')"/>
         <img id="22" src="media/pictures/22.png" onclick="play('22_audio')"/>
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="right">
+        <img src="media/pictures/h_instruction.png"/>
+    </div>
+    <div><i>Clique sur le mot pour entendre la prononciation</i></div>
+    <div class="wrapper">
+        <img id="01" src="media/pictures/h_01.png" onclick="play('h_01_audio')"/>
+        <img id="02" src="media/pictures/h_02.png" onclick="play('h_02_audio')"/>
+        <img id="03" src="media/pictures/h_03.png" onclick="play('h_03_audio')"/>
+        <img id="04" src="media/pictures/h_04.png" onclick="play('h_04_audio')"/>
+    </div>
+    <button id="show-harakat-correction" onclick="display('harakat-correction')">Montrer la correction</button>
+    <div id="harakat-correction" class="wrapper hide">
+        <img src="media/pictures/hc_01.png"/>
+        <img src="media/pictures/hc_02.png"/>
+        <img src="media/pictures/hc_03.png"/>
+        <img src="media/pictures/hc_04.png"/>
+    </div>
     <audio id="01_audio" src="media/audio/01.m4a"></audio>
     <audio id="02_audio" src="media/audio/02.m4a"></audio>
     <audio id="03_audio" src="media/audio/03.m4a"></audio>
@@ -53,6 +73,10 @@
     <audio id="20_audio" src="media/audio/20.m4a"></audio>
     <audio id="21_audio" src="media/audio/21.m4a"></audio>
     <audio id="22_audio" src="media/audio/22.m4a"></audio>
+    <audio id="h_01_audio" src="media/audio/h_01.m4a"></audio>
+    <audio id="h_02_audio" src="media/audio/h_02.m4a"></audio>
+    <audio id="h_03_audio" src="media/audio/h_03.m4a"></audio>
+    <audio id="h_04_audio" src="media/audio/h_04.m4a"></audio>
 </body>
 <script>
     var audio;
@@ -62,6 +86,10 @@
         };
         audio = document.getElementById(audioId);
         audio.play();
+    }
+    function display(blockId) {
+        var correction = document.getElementById(blockId);
+        correction.classList.remove('hide');
     }
 </script>
 </html>
