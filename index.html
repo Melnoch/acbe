@@ -5,7 +5,12 @@
     <title>Leçon 14</title>
 </head>
 <body>
-    <h1>Lire jusqu'à ce que ce soit fluide</h1>
+    <div class="center">
+        <img src="media/pictures/title.png"/>
+    </div>
+    <div class="right">
+        <img src="media/pictures/instruction_01.png" onclick="play('instruction_01_audio')"/>
+    </div>
     <div><i>Cliquer sur la lettre ou le mot pour entendre la prononciation</i></div>
     <div class="wrapper">
         <img id="01" src="media/pictures/01.png" onclick="play('01_audio')"/>
@@ -35,7 +40,7 @@
     <br/>
     <br/>
     <div class="right">
-        <img src="media/pictures/h_instruction.png"/>
+        <img src="media/pictures/h_instruction.png" onclick="play('instruction_02_audio')"/>
     </div>
     <div><i>Cliquer sur le mot pour entendre la prononciation</i></div>
     <div class="wrapper">
@@ -55,7 +60,7 @@
     <br/>
     <br/>
     <div class="right">
-        <img src="media/pictures/p_instruction.png"/>
+        <img src="media/pictures/p_instruction.png" onclick="play('instruction_03_audio')"/>
     </div>
     <div><i>Cliquer sur l'image pour entendre la prononciation</i></div>
     <div class="wrapper">
@@ -70,7 +75,7 @@
     <br/>
     <br/>
     <div class="right">
-        <img src="media/pictures/w_instruction.png"/>
+        <img src="media/pictures/w_instruction.png" onclick="play('instruction_04_audio')"/>
     </div>
     <div class="wrapper">
         <img id="01" src="media/pictures/w_01.png"/>
@@ -91,55 +96,65 @@
     <br/>
     <br/>
     <div class="right">
-        <img src="media/pictures/l_instruction.png"/>
+        <img src="media/pictures/l_instruction.png" onclick="play('instruction_05_audio')"/>
     </div>
     <div class="wrapper">
-        <img id="01" src="media/pictures/l_01.png"/>
-        <img id="02" src="media/pictures/l_02.png"/>
-        <img id="03" src="media/pictures/l_03.png"/>
-        <img id="04" src="media/pictures/l_04.png"/>
-        <img id="05" src="media/pictures/l_05.png"/>
+        <img id="01" src="media/pictures/l_01.png" onclick="play('l_01_audio')"/>
+        <img id="02" src="media/pictures/l_02.png" onclick="play('l_02_audio')"/>
+        <img id="03" src="media/pictures/l_03.png" onclick="play('l_03_audio')"/>
+        <img id="04" src="media/pictures/l_04.png" onclick="play('l_04_audio')"/>
+        <img id="05" src="media/pictures/l_05.png" onclick="play('l_05_audio')"/>
     </div>
     <button id="show-link-correction" onclick="display('link-correction')">Montrer la correction</button>
     <div id="link-correction" class="wrapper hide">
-        <img src="media/pictures/lp_01.png"/>
-        <img src="media/pictures/lp_02.png"/>
-        <img src="media/pictures/lp_03.png"/>
-        <img src="media/pictures/lp_04.png"/>
-        <img src="media/pictures/lp_05.png"/>
+        <img src="media/pictures/lp_01.png" onclick="play('l_01_audio')"/>
+        <img src="media/pictures/lp_02.png" onclick="play('l_02_audio')"/>
+        <img src="media/pictures/lp_03.png" onclick="play('l_03_audio')"/>
+        <img src="media/pictures/lp_04.png" onclick="play('l_04_audio')"/>
+        <img src="media/pictures/lp_05.png" onclick="play('l_05_audio')"/>
     </div>
-    <audio id="01_audio" src="media/audio/01.m4a"></audio>
-    <audio id="02_audio" src="media/audio/02.m4a"></audio>
-    <audio id="03_audio" src="media/audio/03.m4a"></audio>
-    <audio id="04_audio" src="media/audio/04.m4a"></audio>
-    <audio id="05_audio" src="media/audio/05.m4a"></audio>
-    <audio id="06_audio" src="media/audio/06.m4a"></audio>
-    <audio id="07_audio" src="media/audio/07.m4a"></audio>
-    <audio id="08_audio" src="media/audio/08.m4a"></audio>
-    <audio id="09_audio" src="media/audio/09.m4a"></audio>
-    <audio id="10_audio" src="media/audio/10.m4a"></audio>
-    <audio id="11_audio" src="media/audio/11.m4a"></audio>
-    <audio id="12_audio" src="media/audio/12.m4a"></audio>
-    <audio id="13_audio" src="media/audio/13.m4a"></audio>
-    <audio id="14_audio" src="media/audio/14.m4a"></audio>
-    <audio id="15_audio" src="media/audio/15.m4a"></audio>
-    <audio id="16_audio" src="media/audio/16.m4a"></audio>
-    <audio id="17_audio" src="media/audio/17.m4a"></audio>
-    <audio id="18_audio" src="media/audio/18.m4a"></audio>
-    <audio id="19_audio" src="media/audio/19.m4a"></audio>
-    <audio id="20_audio" src="media/audio/20.m4a"></audio>
-    <audio id="21_audio" src="media/audio/21.m4a"></audio>
-    <audio id="22_audio" src="media/audio/22.m4a"></audio>
-    <audio id="h_01_audio" src="media/audio/h_01.m4a"></audio>
-    <audio id="h_02_audio" src="media/audio/h_02.m4a"></audio>
-    <audio id="h_03_audio" src="media/audio/h_03.m4a"></audio>
-    <audio id="h_04_audio" src="media/audio/h_04.m4a"></audio>
-    <audio id="p_01_audio" src="media/audio/p_01.m4a"></audio>
-    <audio id="p_02_audio" src="media/audio/p_02.m4a"></audio>
-    <audio id="p_03_audio" src="media/audio/p_03.m4a"></audio>
-    <audio id="p_04_audio" src="media/audio/p_04.m4a"></audio>
-    <audio id="p_05_audio" src="media/audio/p_05.m4a"></audio>
-    <audio id="p_06_audio" src="media/audio/p_06.m4a"></audio>
+    <audio id="01_audio" src="media/audio/01.ogg"></audio>
+    <audio id="02_audio" src="media/audio/02.ogg"></audio>
+    <audio id="03_audio" src="media/audio/03.ogg"></audio>
+    <audio id="04_audio" src="media/audio/04.ogg"></audio>
+    <audio id="05_audio" src="media/audio/05.ogg"></audio>
+    <audio id="06_audio" src="media/audio/06.ogg"></audio>
+    <audio id="07_audio" src="media/audio/07.ogg"></audio>
+    <audio id="08_audio" src="media/audio/08.ogg"></audio>
+    <audio id="09_audio" src="media/audio/09.ogg"></audio>
+    <audio id="10_audio" src="media/audio/10.ogg"></audio>
+    <audio id="11_audio" src="media/audio/11.ogg"></audio>
+    <audio id="12_audio" src="media/audio/12.ogg"></audio>
+    <audio id="13_audio" src="media/audio/13.ogg"></audio>
+    <audio id="14_audio" src="media/audio/14.ogg"></audio>
+    <audio id="15_audio" src="media/audio/15.ogg"></audio>
+    <audio id="16_audio" src="media/audio/16.ogg"></audio>
+    <audio id="17_audio" src="media/audio/17.ogg"></audio>
+    <audio id="18_audio" src="media/audio/18.ogg"></audio>
+    <audio id="19_audio" src="media/audio/19.ogg"></audio>
+    <audio id="20_audio" src="media/audio/20.ogg"></audio>
+    <audio id="21_audio" src="media/audio/21.ogg"></audio>
+    <audio id="22_audio" src="media/audio/22.ogg"></audio>
+    <audio id="h_01_audio" src="media/audio/h_01.ogg"></audio>
+    <audio id="h_02_audio" src="media/audio/h_02.ogg"></audio>
+    <audio id="h_03_audio" src="media/audio/h_03.ogg"></audio>
+    <audio id="h_04_audio" src="media/audio/h_04.ogg"></audio>
+    <audio id="p_01_audio" src="media/audio/p_01.ogg"></audio>
+    <audio id="p_02_audio" src="media/audio/p_02.ogg"></audio>
+    <audio id="p_03_audio" src="media/audio/p_03.ogg"></audio>
+    <audio id="p_04_audio" src="media/audio/p_04.ogg"></audio>
+    <audio id="p_05_audio" src="media/audio/p_05.ogg"></audio>
+    <audio id="p_06_audio" src="media/audio/p_06.ogg"></audio>
+    <audio id="l_01_audio" src="media/audio/l_01.ogg"></audio>
+    <audio id="l_02_audio" src="media/audio/l_02.ogg"></audio>
+    <audio id="l_03_audio" src="media/audio/l_03.ogg"></audio>
+    <audio id="l_04_audio" src="media/audio/l_04.ogg"></audio>
+    <audio id="l_05_audio" src="media/audio/l_05.ogg"></audio>
+    <audio id="instruction_01_audio" src="media/audio/instruction_01.ogg"></audio>
+    <audio id="instruction_02_audio" src="media/audio/instruction_02.ogg"></audio>
+    <audio id="instruction_03_audio" src="media/audio/instruction_03.ogg"></audio>
+    <audio id="instruction_04_audio" src="media/audio/instruction_04.ogg"></audio>
+    <audio id="instruction_05_audio" src="media/audio/instruction_05.ogg"></audio>
 </body>
 <script>
     var audio;
