@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../resources/style/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="apple-touch-icon" sizes="180x180" href="../resources/media/pictures/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../resources/media/pictures/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../resources/media/pictures/favicon/favicon-16x16.png">
+<link rel="manifest" href="../resources/media/pictures/favicon/site.webmanifest">
+<head>
+    <meta charset="UTF-8">
+    <title>Leçon 15 - ع</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark sticky-top bg-dark">
+            <a class="navbar-brand" href="#"><img src="../resources/media/pictures/favicon/favicon-16x16.png"/> Niveau 1</a>
+            <select id="lesson" class="custom-select col-sm-2" onchange="javascript:location.href = this.value;">
+                <option value="../index.html">Index</option>
+                <option value="lesson15.html" selected>Leçon 15 - ع</option>
+                <option value="lesson16.html">Leçon 16 - ف</option>
+            </select>
+        </nav>
+    </header>
+    <div class="center">
+        <img src="../resources/media/pictures/01/15/title.png"/>
+    </div>
+    <section>
+        <div class="right">
+            <img src="../resources/media/pictures/01/instructions/instruction_letter.png" onclick="play('instruction_letter_audio')"/>
+        </div>
+        <div><i>Cliquer sur la lettre ou le mot pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
+        <div class="wrapper">
+            <img src="../resources/media/pictures/01/15/01.png" onclick="play('01_audio')"/>
+            <img src="../resources/media/pictures/01/15/02.png" onclick="play('02_audio')"/>
+            <img src="../resources/media/pictures/01/15/03.png" onclick="play('03_audio')"/>
+            <img src="../resources/media/pictures/01/15/04.png" onclick="play('04_audio')"/>
+            <img src="../resources/media/pictures/01/15/05.png" onclick="play('05_audio')"/>
+            <img src="../resources/media/pictures/01/15/06.png" onclick="play('06_audio')"/>
+            <img src="../resources/media/pictures/01/15/07.png" onclick="play('07_audio')"/>
+            <img src="../resources/media/pictures/01/15/08.png" onclick="play('08_audio')"/>
+            <img src="../resources/media/pictures/01/15/09.png" onclick="play('09_audio')"/>
+            <img src="../resources/media/pictures/01/15/10.png" onclick="play('10_audio')"/>
+            <img src="../resources/media/pictures/01/15/11.png" onclick="play('11_audio')"/>
+            <img src="../resources/media/pictures/01/15/12.png" onclick="play('12_audio')"/>
+            <img src="../resources/media/pictures/01/15/13.png" onclick="play('13_audio')"/>
+            <img src="../resources/media/pictures/01/15/14.png" onclick="play('14_audio')"/>
+            <img src="../resources/media/pictures/01/15/15.png" onclick="play('15_audio')"/>
+            <img src="../resources/media/pictures/01/15/16.png" onclick="play('16_audio')"/>
+            <img src="../resources/media/pictures/01/15/17.png" onclick="play('17_audio')"/>
+            <img src="../resources/media/pictures/01/15/18.png" onclick="play('18_audio')"/>
+            <img src="../resources/media/pictures/01/15/19.png" onclick="play('19_audio')"/>
+            <img src="../resources/media/pictures/01/15/20.png" onclick="play('20_audio')"/>
+            <img src="../resources/media/pictures/01/15/21.png" onclick="play('21_audio')"/>
+            <img src="../resources/media/pictures/01/15/22.png" onclick="play('22_audio')"/>
+        </div>
+        <br/>
+        <br/>
+    </section>
+    <section>
+        <br/>
+        <div class="right">
+            <img src="../resources/media/pictures/01/instructions/instruction_harakat.png" onclick="play('instruction_harakat_audio')"/>
+        </div>
+        <div><i>Cliquer sur le mot pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
+        <div class="wrapper">
+            <img src="../resources/media/pictures/01/15/h_01.png" onclick="play('h_01_audio')"/>
+            <img src="../resources/media/pictures/01/15/h_02.png" onclick="play('h_02_audio')"/>
+            <img src="../resources/media/pictures/01/15/h_03.png" onclick="play('h_03_audio')"/>
+            <img src="../resources/media/pictures/01/15/h_04.png" onclick="play('h_04_audio')"/>
+        </div>
+        <button class="btn btn-primary" id="show-harakat-correction" onclick="display('show-harakat-correction', 'harakat-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
+        <div id="harakat-correction" class="wrapper hide">
+            <img src="../resources/media/pictures/01/15/hc_01.png"/>
+            <img src="../resources/media/pictures/01/15/hc_02.png"/>
+            <img src="../resources/media/pictures/01/15/hc_03.png"/>
+            <img src="../resources/media/pictures/01/15/hc_04.png"/>
+        </div>
+        <br/>
+        <br/>
+    </section>
+    <section>
+        <br/>
+        <div class="right">
+            <img src="../resources/media/pictures/01/15/instruction_picture.png" onclick="play('instruction_picture_audio')"/>
+        </div>
+        <div><i>Cliquer sur l'image pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
+        <div class="wrapper">
+            <img src="../resources/media/pictures/01/15/p_01.png" onclick="play('p_01_audio')"/>
+            <img src="../resources/media/pictures/01/15/p_02.png" onclick="play('p_02_audio')"/>
+            <img src="../resources/media/pictures/01/15/p_03.png" onclick="play('p_03_audio')"/>
+            <img src="../resources/media/pictures/01/15/p_04.png" onclick="play('p_04_audio')"/>
+            <img src="../resources/media/pictures/01/15/p_05.png" onclick="play('p_05_audio')"/>
+            <img src="../resources/media/pictures/01/15/p_06.png" onclick="play('p_06_audio')"/>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+    </section>
+    <section>
+        <div class="right">
+            <img src="../resources/media/pictures/01/15/instruction_circle.png"/>
+        </div>
+        <div class="wrapper">
+            <img src="../resources/media/pictures/01/15/c_01.png"/>
+            <img src="../resources/media/pictures/01/15/c_02.png"/>
+            <img src="../resources/media/pictures/01/15/c_03.png"/>
+            <img src="../resources/media/pictures/01/15/c_04.png"/>
+            <img src="../resources/media/pictures/01/15/c_05.png"/>
+            <img src="../resources/media/pictures/01/15/c_06.png"/>
+        </div>
+        <button class="btn btn-primary" id="show-circle-correction" onclick="display('show-circle-correction', 'circle-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
+        <div id="circle-correction" class="wrapper hide">
+            <img src="../resources/media/pictures/01/15/cc_01.png"/>
+            <img src="../resources/media/pictures/01/15/cc_02.png"/>
+            <img src="../resources/media/pictures/01/15/cc_03.png"/>
+            <img src="../resources/media/pictures/01/15/cc_04.png"/>
+            <img src="../resources/media/pictures/01/15/cc_05.png"/>
+            <img src="../resources/media/pictures/01/15/cc_06.png"/>
+        </div>
+        <br/>
+        <br/>
+    </section>
+    <section>
+        <br/>
+        <div class="right">
+            <img src="../resources/media/pictures/01/instructions/instruction_link.png" onclick="play('instruction_link_audio')"/>
+        </div>
+        <div class="wrapper">
+            <img src="../resources/media/pictures/01/15/l_01.png"/>
+            <img src="../resources/media/pictures/01/15/l_02.png"/>
+            <img src="../resources/media/pictures/01/15/l_03.png"/>
+            <img src="../resources/media/pictures/01/15/l_04.png"/>
+            <img src="../resources/media/pictures/01/15/l_05.png"/>
+        </div>
+        <button class="btn btn-primary" id="show-link-correction" onclick="display('show-link-correction', 'link-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
+        <div id="link-correction" class="wrapper hide">
+            <img src="../resources/media/pictures/01/15/lc_01.png"/>
+            <img src="../resources/media/pictures/01/15/lc_02.png"/>
+            <img src="../resources/media/pictures/01/15/lc_03.png"/>
+            <img src="../resources/media/pictures/01/15/lc_04.png"/>
+            <img src="../resources/media/pictures/01/15/lc_05.png"/>
+        </div>
+        <br/>
+        <br/>
+    </section>
+    <section>
+        <br/>
+        <div class="right">
+            <img src="../resources/media/pictures/01/instructions/instruction_bind.png" onclick="play('instruction_bind_audio')"/>
+        </div>
+        <div class="wrapper">
+            <img src="../resources/media/pictures/01/15/b_01.png" onclick="play('b_01_audio')"/>
+            <img src="../resources/media/pictures/01/15/b_02.png" onclick="play('b_02_audio')"/>
+            <img src="../resources/media/pictures/01/15/b_03.png" onclick="play('b_03_audio')"/>
+            <img src="../resources/media/pictures/01/15/b_04.png" onclick="play('b_04_audio')"/>
+            <img src="../resources/media/pictures/01/15/b_05.png" onclick="play('b_05_audio')"/>
+        </div>
+        <button class="btn btn-primary" id="show-bind-correction" onclick="display('show-bind-correction', 'bind-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
+        <div id="bind-correction" class="wrapper hide">
+            <img src="../resources/media/pictures/01/15/bp_01.png" onclick="play('b_01_audio')"/>
+            <img src="../resources/media/pictures/01/15/bp_02.png" onclick="play('b_02_audio')"/>
+            <img src="../resources/media/pictures/01/15/bp_03.png" onclick="play('b_03_audio')"/>
+            <img src="../resources/media/pictures/01/15/bp_04.png" onclick="play('b_04_audio')"/>
+            <img src="../resources/media/pictures/01/15/bp_05.png" onclick="play('b_05_audio')"/>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+    </section>
+    <section>
+        <div class="center">
+            <img src="../resources/media/pictures/01/15/dou^a_title.png" onclick="play('dou^a_title_audio')"/>
+        </div>
+        <span><i class="fas fa-volume-up"></i></span>
+        <div class="center">
+            <img src="../resources/media/pictures/01/15/dou^a_p71.png" onclick="play('dou^a_audio')"/>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container text-center">
+            <label class="text-muted">N'oubliez pas l'intention</label>
+        </div>
+    </footer>
+    <audio id="01_audio" src="../resources/media/audio/01/15/01.ogg"></audio>
+    <audio id="02_audio" src="../resources/media/audio/01/15/02.ogg"></audio>
+    <audio id="03_audio" src="../resources/media/audio/01/15/03.ogg"></audio>
+    <audio id="04_audio" src="../resources/media/audio/01/15/04.ogg"></audio>
+    <audio id="05_audio" src="../resources/media/audio/01/15/05.ogg"></audio>
+    <audio id="06_audio" src="../resources/media/audio/01/15/06.ogg"></audio>
+    <audio id="07_audio" src="../resources/media/audio/01/15/07.ogg"></audio>
+    <audio id="08_audio" src="../resources/media/audio/01/15/08.ogg"></audio>
+    <audio id="09_audio" src="../resources/media/audio/01/15/09.ogg"></audio>
+    <audio id="10_audio" src="../resources/media/audio/01/15/10.ogg"></audio>
+    <audio id="11_audio" src="../resources/media/audio/01/15/11.ogg"></audio>
+    <audio id="12_audio" src="../resources/media/audio/01/15/12.ogg"></audio>
+    <audio id="13_audio" src="../resources/media/audio/01/15/13.ogg"></audio>
+    <audio id="14_audio" src="../resources/media/audio/01/15/14.ogg"></audio>
+    <audio id="15_audio" src="../resources/media/audio/01/15/15.ogg"></audio>
+    <audio id="16_audio" src="../resources/media/audio/01/15/16.ogg"></audio>
+    <audio id="17_audio" src="../resources/media/audio/01/15/17.ogg"></audio>
+    <audio id="18_audio" src="../resources/media/audio/01/15/18.ogg"></audio>
+    <audio id="19_audio" src="../resources/media/audio/01/15/19.ogg"></audio>
+    <audio id="20_audio" src="../resources/media/audio/01/15/20.ogg"></audio>
+    <audio id="21_audio" src="../resources/media/audio/01/15/21.ogg"></audio>
+    <audio id="22_audio" src="../resources/media/audio/01/15/22.ogg"></audio>
+    <audio id="h_01_audio" src="../resources/media/audio/01/15/h_01.ogg"></audio>
+    <audio id="h_02_audio" src="../resources/media/audio/01/15/h_02.ogg"></audio>
+    <audio id="h_03_audio" src="../resources/media/audio/01/15/h_03.ogg"></audio>
+    <audio id="h_04_audio" src="../resources/media/audio/01/15/h_04.ogg"></audio>
+    <audio id="p_01_audio" src="../resources/media/audio/01/15/p_01.ogg"></audio>
+    <audio id="p_02_audio" src="../resources/media/audio/01/15/p_02.ogg"></audio>
+    <audio id="p_03_audio" src="../resources/media/audio/01/15/p_03.ogg"></audio>
+    <audio id="p_04_audio" src="../resources/media/audio/01/15/p_04.ogg"></audio>
+    <audio id="p_05_audio" src="../resources/media/audio/01/15/p_05.ogg"></audio>
+    <audio id="p_06_audio" src="../resources/media/audio/01/15/p_06.ogg"></audio>
+    <audio id="b_01_audio" src="../resources/media/audio/01/15/b_01.ogg"></audio>
+    <audio id="b_02_audio" src="../resources/media/audio/01/15/b_02.ogg"></audio>
+    <audio id="b_03_audio" src="../resources/media/audio/01/15/b_03.ogg"></audio>
+    <audio id="b_04_audio" src="../resources/media/audio/01/15/b_04.ogg"></audio>
+    <audio id="b_05_audio" src="../resources/media/audio/01/15/b_05.ogg"></audio>
+    <audio id="instruction_letter_audio" src="../resources/media/audio/01/instructions/instruction_letter.ogg"></audio>
+    <audio id="instruction_harakat_audio" src="../resources/media/audio/01/instructions/instruction_harakat.ogg"></audio>
+    <audio id="instruction_picture_audio" src="../resources/media/audio/01/15/instruction_picture.ogg"></audio>
+    <audio id="instruction_link_audio" src="../resources/media/audio/01/instructions/instruction_link.ogg"></audio>
+    <audio id="instruction_bind_audio" src="../resources/media/audio/01/instructions/instruction_bind.ogg"></audio>
+    <audio id="dou^a_audio" src="../resources/media/audio/01/15/dou^a_p71.ogg"></audio>
+    <audio id="dou^a_title_audio" src="../resources/media/audio/01/15/dou^a_title.ogg"></audio>
+</body>
+<script type="text/javascript" src="../resources/js/audio.js"></script>
+<script type="text/javascript" src="../resources/js/hide_display.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/499a53e00f.js" crossorigin="anonymous"></script>
+</html>
