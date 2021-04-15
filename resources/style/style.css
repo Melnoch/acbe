@@ -64,3 +64,11 @@ body > .container {
     padding-right: 15px;
     padding-left: 15px;
 }
+li.good-answer {
+    border-color: green;
+    border-width: 3px;
+}
+li.bad-answer {
+    border-color: red;
+    border-width: 3px;
+}
