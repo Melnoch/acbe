@@ -36,16 +36,6 @@
         </div>
         <form id="myForm">
             <section>
-            <div class="form-group">
-                <label for="lastname">Nom de famille :</label>
-                <input type="text" name="lastname" id="lastname" class="form-control" required />
-            </div>
-            <div class="form-group">
-                <label for="firstname">Prénom :</label>
-                <input type="text" name="firstname" id="firstname" class="form-control" required />
-            </div>
-            </section>
-            <section>
                 <h2>Écoutez l'audio et cocher la lettre entendue : </h2>
                 <ul class="list-group">
                     <li class="list-group-item" id="1_1">
@@ -363,10 +353,13 @@
             </section>
             <section>
                 <div class="form-group">
-                    <button type="button" class="btn btn-primary" onclick="correct()">Voir la correction et envoyer le devoir</button>
+                    <button type="button" class="btn btn-primary" onclick="correct()">Voir la correction</button>
                 </div>
                 <div class="form-group">
                     <label id="result"></label>
+                    <div id="firework" style="display: none;">
+                        <iframe src="https://giphy.com/embed/nbJUuYFI6s0w0" width="480" height="215" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    </div>
                 </div>
             </section>
         </form>

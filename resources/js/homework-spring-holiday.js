@@ -21,10 +21,14 @@ function correct() {
     count = count + updatesRadioClass('3_6', '3_6', 'option1');
     count = count + updatesRadioClass('3_7', '3_7', 'option2');
     let message = "";
-    if (count > 0) message = "Tu as " + count + " bonnes réponses sur 20. Il est temps de réviser."
-    if (count > 10) message = "Tu as " + count + " bonnes réponses sur 20. Tu peux encore t'améliorer."
-    if (count > 15) message = "C'est bien ! Tu as " + count + " bonnes réponses sur 20 !!!"
-    if (count == 20) message = "Bravo 🎉 🎉 🎉 tu as 20 bonnes réponses sur 20, c'est parfait !!!"
+    $("#firework").css("display", "none");
+    if (count > 0) message = "Tu as " + count + " bonnes réponses sur 20. Il est temps de réviser.";
+    if (count > 10) message = "Tu as " + count + " bonnes réponses sur 20. Tu peux encore t'améliorer.";
+    if (count > 15) message = "C'est bien ! Tu as " + count + " bonnes réponses sur 20 !!!";
+    if (count == 20) {
+        message = "Bravo 🎉 🎉 🎉 tu as 20 bonnes réponses sur 20, c'est parfait !!!";
+        $("#firework").css("display", "block");
+    }
     $("#result").text(message);
 }
 function updatesRadioClass(id, radioName, value) {
