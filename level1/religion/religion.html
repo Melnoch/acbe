@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../../resources/style/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><link rel="apple-touch-icon" sizes="180x180" href="../../resources/media/pictures/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../resources/media/pictures/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../resources/media/pictures/favicon/favicon-16x16.png">
+<link rel="manifest" href="../../resources/media/pictures/favicon/site.webmanifest">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Religion niveau 1</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark sticky-top bg-dark">
+            <a class="navbar-brand" href="#"><img src="../../resources/media/pictures/favicon/favicon-16x16.png" /> Niveau 1</a>
+            <select id="lesson" class="custom-select col-sm-2" onchange="location.href = this.value;">
+                <option value="../../index.html">Index</option>
+                <option value="../../common/alphabet.html">Alphabet</option>
+                <option value="../lesson15.html">Leçon 15 - ع</option>
+                <option value="../lesson16.html">Leçon 16 - ف</option>
+                <option value="../lesson17.html">Leçon 17 - ل</option>
+                <option value="../lesson18.html">Leçon 18 - ذ</option>
+                <option value="../lesson19.html">Leçon 19 - ش</option>
+                <option value="../lesson20.html">Leçon 20 - ص</option>
+                <option value="../lesson21.html">Leçon 21 - غ</option>
+                <option value="../lesson22.html">Leçon 22 - ق</option>
+                <option value="../lesson23.html">Leçon 23 - ن</option>
+                <option value="../lesson24.html">Leçon 24 - ط</option>
+                <option value="../lesson25.html">Leçon 25 - ه</option>
+                <option value="../lesson26.html" selected>Leçon 26 - و</option>
+            </select>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="center">
+            <img style="width: 50%" src="../../resources/media/pictures/01/religion/title.png" />
+        </div>
+        <div class="accordion" id="myAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading01">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01" aria-expanded="true" aria-controls="collapse01">
+                        Croyance - Leçon 02 p.19
+                    </button>
+                </h2>
+                <div id="collapse01" class="accordion-collapse collapse show" aria-labelledby="heading01" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                        <div class="wrapper">
+                            <div class="wrapper-column">
+                                <img src="../../resources/media/pictures/01/religion/p18.png" onclick="play('01_02_audio')" />
+                            </div>
+                            <div class="wrapper-column">
+                                <img src="../../resources/media/pictures/01/religion/p19.png" onclick="play('01_02_audio')" />
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <img src="../../resources/media/pictures/01/religion/p18_fr.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading02">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02" aria-expanded="true" aria-controls="collapse02">
+                        Croyance - Leçon 04 p.27
+                    </button>
+                </h2>
+                <div id="collapse02" class="accordion-collapse collapse" aria-labelledby="heading02" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                        <div class="wrapper">
+                            <div class="wrapper-column">
+                                <img src="../../resources/media/pictures/01/religion/p26.png" onclick="play('01_04_audio')" />
+                            </div>
+                            <div class="wrapper-column">
+                                <img src="../../resources/media/pictures/01/religion/p27.png" onclick="play('01_04_audio')" />
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <img src="../../resources/media/pictures/01/religion/p26_fr.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="heading03">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse03" aria-expanded="true" aria-controls="collapse03">
+                    Adorations - Leçon 03 p.79
+                </button>
+            </h2>
+            <div id="collapse03" class="accordion-collapse collapse" aria-labelledby="heading03" data-bs-parent="#myAccordion">
+                <div class="accordion-body">
+                    <div class="wrapper">
+                        <div class="wrapper-column">
+                            <img src="../../resources/media/pictures/01/religion/p78.png" onclick="play('02_03_audio')" />
+                        </div>
+                        <div class="wrapper-column">
+                            <img src="../../resources/media/pictures/01/religion/p79.png" onclick="play('02_03_audio')" />
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <img src="../../resources/media/pictures/01/religion/p78_fr.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="container text-center">
+                <label class="text-muted">N'oubliez pas l'intention</label>
+            </div>
+        </footer>
+    </div>
+    <audio id="01_02_audio" src="../../resources/media/audio/01/religion/p19.mp3"></audio>
+    <audio id="01_04_audio" src="../../resources/media/audio/01/religion/p27.mp3"></audio>
+    <audio id="02_03_audio" src="../../resources/media/audio/01/religion/p79.mp3"></audio>
+</body>
+<script type="text/javascript" src="../../resources/js/audio.js"></script>
+<script type="text/javascript" src="../../resources/js/hide_display.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/499a53e00f.js" crossorigin="anonymous"></script>
+
+</html>
