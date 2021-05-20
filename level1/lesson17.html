@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="../resources/style/style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><link rel="apple-touch-icon" sizes="180x180" href="../../resources/media/pictures/favicon/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../resources/media/pictures/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../resources/media/pictures/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../resources/media/pictures/favicon/favicon-16x16.png">
@@ -12,24 +12,44 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark sticky-top bg-dark">
-            <a class="navbar-brand" href="#"><img src="../resources/media/pictures/favicon/favicon-16x16.png"/> Niveau 1</a>
-            <select id="lesson" class="custom-select col-sm-2" onchange="javascript:location.href = this.value;">
-                <option value="../index.html">Index</option>
-                <option value="../common/alphabet.html">Alphabet</option>
-                <option value="lesson15.html">Leçon 15 - ع</option>
-                <option value="lesson16.html">Leçon 16 - ف</option>
-                <option value="lesson17.html" selected>Leçon 17 - ل</option>
-                <option value="lesson18.html">Leçon 18 - ذ</option>
-                <option value="lesson19.html">Leçon 19 - ش</option>
-                <option value="lesson20.html">Leçon 20 - ص</option>
-                <option value="lesson21.html">Leçon 21 - غ</option>
-                <option value="lesson22.html">Leçon 22 - ق</option>
-                <option value="lesson23.html">Leçon 23 - ن</option>
-                <option value="lesson24.html">Leçon 24 - ط</option>
-                <option value="lesson25.html">Leçon 25 - ه</option>
-                <option value="lesson26.html">Leçon 26 - و</option>
-            </select>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../resources/media/pictures/favicon/favicon-16x16.png" /> Niveau 1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../common/alphabet.html">Alphabet</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Niveau 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="religion/religion.html">Religion</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="lesson15.html">Leçon 15 - ع</a></li>
+                                <li><a class="dropdown-item" href="lesson16.html">Leçon 16 - ف</a></li>
+                                <li><a class="dropdown-item" href="lesson17.html"><b>Leçon 17 - ل</b></a></li>
+                                <li><a class="dropdown-item" href="lesson18.html">Leçon 18 - ذ</a></li>
+                                <li><a class="dropdown-item" href="lesson19.html">Leçon 19 - ش</a></li>
+                                <li><a class="dropdown-item" href="lesson20.html">Leçon 20 - ص</a></li>
+                                <li><a class="dropdown-item" href="lesson21.html">Leçon 21 - غ</a></li>
+                                <li><a class="dropdown-item" href="lesson22.html">Leçon 22 - ق</a></li>
+                                <li><a class="dropdown-item" href="lesson23.html">Leçon 23 - ن</a></li>
+                                <li><a class="dropdown-item" href="lesson24.html">Leçon 24 - ط</a></li>
+                                <li><a class="dropdown-item" href="lesson25.html">Leçon 25 - ه</a></li>
+                                <li><a class="dropdown-item" href="lesson26.html">Leçon 26 - و</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -238,7 +258,7 @@
 <script type="text/javascript" src="../resources/js/audio.js"></script>
 <script type="text/javascript" src="../resources/js/hide_display.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/499a53e00f.js" crossorigin="anonymous"></script>
 </html>

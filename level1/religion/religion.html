@@ -13,24 +13,44 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-dark sticky-top bg-dark">
-            <a class="navbar-brand" href="#"><img src="../../resources/media/pictures/favicon/favicon-16x16.png" /> Niveau 1</a>
-            <select id="lesson" class="custom-select col-sm-2" onchange="location.href = this.value;">
-                <option value="../../index.html">Index</option>
-                <option value="../../common/alphabet.html">Alphabet</option>
-                <option value="../lesson15.html">Leçon 15 - ع</option>
-                <option value="../lesson16.html">Leçon 16 - ف</option>
-                <option value="../lesson17.html">Leçon 17 - ل</option>
-                <option value="../lesson18.html">Leçon 18 - ذ</option>
-                <option value="../lesson19.html">Leçon 19 - ش</option>
-                <option value="../lesson20.html">Leçon 20 - ص</option>
-                <option value="../lesson21.html">Leçon 21 - غ</option>
-                <option value="../lesson22.html">Leçon 22 - ق</option>
-                <option value="../lesson23.html">Leçon 23 - ن</option>
-                <option value="../lesson24.html">Leçon 24 - ط</option>
-                <option value="../lesson25.html">Leçon 25 - ه</option>
-                <option value="../lesson26.html" selected>Leçon 26 - و</option>
-            </select>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../../resources/media/pictures/favicon/favicon-16x16.png" /> Niveau 1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../common/alphabet.html">Alphabet</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Niveau 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../religion/religion.html"><b>Religion</b></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../lesson15.html">Leçon 15 - ع</a></li>
+                                <li><a class="dropdown-item" href="../lesson16.html">Leçon 16 - ف</a></li>
+                                <li><a class="dropdown-item" href="../lesson17.html">Leçon 17 - ل</a></li>
+                                <li><a class="dropdown-item" href="../lesson18.html">Leçon 18 - ذ</a></li>
+                                <li><a class="dropdown-item" href="../lesson19.html">Leçon 19 - ش</a></li>
+                                <li><a class="dropdown-item" href="../lesson20.html">Leçon 20 - ص</a></li>
+                                <li><a class="dropdown-item" href="../lesson21.html">Leçon 21 - غ</a></li>
+                                <li><a class="dropdown-item" href="../lesson22.html">Leçon 22 - ق</a></li>
+                                <li><a class="dropdown-item" href="../lesson23.html">Leçon 23 - ن</a></li>
+                                <li><a class="dropdown-item" href="../lesson24.html">Leçon 24 - ط</a></li>
+                                <li><a class="dropdown-item" href="../lesson25.html">Leçon 25 - ه</a></li>
+                                <li><a class="dropdown-item" href="../lesson26.html">Leçon 26 - و</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <div class="container">
