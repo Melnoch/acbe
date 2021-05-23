@@ -72,3 +72,12 @@ li.bad-answer {
     border-color: red;
     border-width: 3px;
 }
+div > h2 > .accordion-button:not(.collapsed) {
+  background-color: #CFFBB7;
+  color:dimgrey;
+}
+
+.invocation {
+    font-size: 4em;
+    font-family: 'Scheherazade', serif
+}
