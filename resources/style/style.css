@@ -26,6 +26,13 @@ section:nth-child(even) {
     justify-content: space-evenly;
     align-items: flex-end;
 }
+.wrapper-tight {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
 html {
     position: relative;
     min-height: 100%;
@@ -80,4 +87,15 @@ div > h2 > .accordion-button:not(.collapsed) {
 .invocation {
     font-size: 4em;
     font-family: 'Scheherazade', serif
+}
+.repeat {
+    margin: 0px 10px 0px 10px;
+    color: dimgrey;
+}
+.repeat:hover, .repeat-active:hover {
+    color: midnightblue;
+}
+.repeat-active {
+    margin: 0px 10px 0px 10px;
+    color: lightseagreen;
 }
