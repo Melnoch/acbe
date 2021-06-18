@@ -57,7 +57,10 @@
     </header>
     <div class="container">
         <div class="center">
-            <img src="../resources/media/pictures/01/01/title.png" />
+            <div class="wrapper">
+                <img src="../resources/media/pictures/01/01/title/01.png"  onclick="play('title_01_audio')"/>
+                <img src="../resources/media/pictures/01/01/title/02.png"  onclick="play('title_02_audio')"/>
+            </div>
         </div>
         <section>
             <div class="right">
@@ -84,10 +87,10 @@
         <section>
             <br />
             <div class="right">
-                <img src="../resources/media/pictures/01/01/02/instruction/01.png"/>
+                <img src="../resources/media/pictures/01/01/02/instruction/01.png" onclick="play('instruction_02_01_audio')" />
             </div>
             <div class="right">
-                <img src="../resources/media/pictures/01/01/02/instruction/02.png" onclick="play('instruction_02_audio')" />
+                <img src="../resources/media/pictures/01/01/02/instruction/02.png" onclick="play('instruction_02_02_audio')" />
             </div>
             <div><i>Cliquer sur l'image pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
             <div class="wrapper">
@@ -210,32 +213,35 @@
             </div>
         </footer>
     </div>
+    <audio id="title_01_audio" src="../resources/media/audio/01/01/title/01.ogg"></audio>
+    <audio id="title_02_audio" src="../resources/media/audio/01/01/title/02.ogg"></audio>
     <audio id="instruction_01_audio" src="../resources/media/audio/01/01/01/instruction/01.ogg"></audio>
-    <audio id="01_01_audio" src="../resources/media/audio/01/01/01/01.m4a"></audio>
-    <audio id="01_02_audio" src="../resources/media/audio/01/01/01/02.m4a"></audio>
-    <audio id="01_03_audio" src="../resources/media/audio/01/01/01/03.m4a"></audio>
-    <audio id="01_04_audio" src="../resources/media/audio/01/01/01/04.m4a"></audio>
-    <audio id="01_05_audio" src="../resources/media/audio/01/01/01/05.m4a"></audio>
-    <audio id="01_06_audio" src="../resources/media/audio/01/01/01/06.m4a"></audio>
-    <audio id="01_07_audio" src="../resources/media/audio/01/01/01/07.m4a"></audio>
-    <audio id="01_08_audio" src="../resources/media/audio/01/01/01/08.m4a"></audio>
-    <audio id="01_09_audio" src="../resources/media/audio/01/01/01/09.m4a"></audio>
-    <audio id="01_10_audio" src="../resources/media/audio/01/01/01/10.m4a"></audio>
-    <audio id="01_11_audio" src="../resources/media/audio/01/01/01/11.m4a"></audio>
-    <audio id="instruction_02_audio" src="../resources/media/audio/01/01/02/instruction/02.m4a"></audio>
-    <audio id="02_01_audio" src="../resources/media/audio/01/01/02/01.m4a"></audio>
-    <audio id="02_02_audio" src="../resources/media/audio/01/01/02/02.m4a"></audio>
-    <audio id="02_03_audio" src="../resources/media/audio/01/01/02/03.m4a"></audio>
-    <audio id="02_04_audio" src="../resources/media/audio/01/01/02/04.m4a"></audio>
-    <audio id="02_05_audio" src="../resources/media/audio/01/01/02/05.m4a"></audio>
-    <audio id="02_06_audio" src="../resources/media/audio/01/01/02/06.m4a"></audio>
-    <audio id="instruction_03_audio" src="../resources/media/audio/01/01/03/instruction/01.m4a"></audio>
+    <audio id="01_01_audio" src="../resources/media/audio/01/01/01/01.ogg"></audio>
+    <audio id="01_02_audio" src="../resources/media/audio/01/01/01/02.ogg"></audio>
+    <audio id="01_03_audio" src="../resources/media/audio/01/01/01/03.ogg"></audio>
+    <audio id="01_04_audio" src="../resources/media/audio/01/01/01/04.ogg"></audio>
+    <audio id="01_05_audio" src="../resources/media/audio/01/01/01/05.ogg"></audio>
+    <audio id="01_06_audio" src="../resources/media/audio/01/01/01/06.ogg"></audio>
+    <audio id="01_07_audio" src="../resources/media/audio/01/01/01/07.ogg"></audio>
+    <audio id="01_08_audio" src="../resources/media/audio/01/01/01/08.ogg"></audio>
+    <audio id="01_09_audio" src="../resources/media/audio/01/01/01/09.ogg"></audio>
+    <audio id="01_10_audio" src="../resources/media/audio/01/01/01/10.ogg"></audio>
+    <audio id="01_11_audio" src="../resources/media/audio/01/01/01/11.ogg"></audio>
+    <audio id="instruction_02_01_audio" src="../resources/media/audio/01/01/02/instruction/01.ogg"></audio>
+    <audio id="instruction_02_02_audio" src="../resources/media/audio/01/01/02/instruction/02.ogg"></audio>
+    <audio id="02_01_audio" src="../resources/media/audio/01/01/02/01.ogg"></audio>
+    <audio id="02_02_audio" src="../resources/media/audio/01/01/02/02.ogg"></audio>
+    <audio id="02_03_audio" src="../resources/media/audio/01/01/02/03.ogg"></audio>
+    <audio id="02_04_audio" src="../resources/media/audio/01/01/02/04.ogg"></audio>
+    <audio id="02_05_audio" src="../resources/media/audio/01/01/02/05.ogg"></audio>
+    <audio id="02_06_audio" src="../resources/media/audio/01/01/02/06.ogg"></audio>
+    <audio id="instruction_03_audio" src="../resources/media/audio/01/01/03/instruction/01.ogg"></audio>
     <audio id="instruction_04_audio" src="../resources/media/audio/01/01/04/instruction/01.ogg"></audio>
     <audio id="instruction_05_audio" src="../resources/media/audio/01/01/05/instruction/01.ogg"></audio>
-    <audio id="instruction_06_audio" src="../resources/media/audio/01/01/06/instruction/01.m4a"></audio>
-    <audio id="06_01_audio" src="../resources/media/audio/01/01/06/01.m4a"></audio>
-    <audio id="06_02_audio" src="../resources/media/audio/01/01/06/02.m4a"></audio>
-    <audio id="06_03_audio" src="../resources/media/audio/01/01/06/03.m4a"></audio>
+    <audio id="instruction_06_audio" src="../resources/media/audio/01/01/06/instruction/01.ogg"></audio>
+    <audio id="06_01_audio" src="../resources/media/audio/01/01/06/01.ogg"></audio>
+    <audio id="06_02_audio" src="../resources/media/audio/01/01/06/02.ogg"></audio>
+    <audio id="06_03_audio" src="../resources/media/audio/01/01/06/03.ogg"></audio>
 </body>
 <script type="text/javascript" src="../resources/js/audio.js"></script>
 <script type="text/javascript" src="../resources/js/hide_display.js"></script>
