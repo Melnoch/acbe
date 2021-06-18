@@ -19,12 +19,18 @@ section:nth-child(even) {
     flex-direction: row-reverse;
     justify-content: space-evenly;
 }
+.wrapper > img {
+    height: max-content;
+}
 .wrapper-column {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-end;
+}
+.wrapper-column.center {
+    align-items: center;
 }
 .wrapper-tight {
     display: flex;
@@ -83,10 +89,14 @@ div > h2 > .accordion-button:not(.collapsed) {
   background-color: #CFFBB7;
   color:dimgrey;
 }
-
+.arabic {
+    font-size: 4em;
+    font-family: 'Scheherazade', serif;
+    padding: 1em;
+}
 .invocation {
     font-size: 4em;
-    font-family: 'Scheherazade', serif
+    font-family: 'Scheherazade', serif;
 }
 .repeat {
     margin: 0px 10px 0px 10px;
