@@ -74,12 +74,12 @@
             </div>
             <div class="wrapper">
                 <img src="../resources/media/pictures/02/01/01/01.png" onclick="play('01_01_audio')" />
-                <img src="../resources/media/pictures/02/01/01/02.png" onclick="play('01_02_audio')" />
-                <img src="../resources/media/pictures/02/01/01/03.png" onclick="play('01_03_audio')" />
+                <img src="../resources/media/pictures/02/01/01/02.png" />
+                <img src="../resources/media/pictures/02/01/01/03.png" onclick="play('01_02_audio')" />
             </div>
             <div class="wrapper">
-                <img src="../resources/media/pictures/02/01/01/04.png" onclick="play('01_04_audio')" />
-                <img src="../resources/media/pictures/02/01/01/05.png" onclick="play('01_05_audio')" />
+                <img src="../resources/media/pictures/02/01/01/04.png" onclick="play('01_03_audio')" />
+                <img src="../resources/media/pictures/02/01/01/05.png" onclick="play('01_04_audio')" />
             </div>
             <br />
             <br />
@@ -87,7 +87,7 @@
         <section>
             <br />
             <div class="right">
-                <img src="../resources/media/pictures/01/01/02/instruction/01.png" onclick="play('instruction_02_02_audio')" />
+                <img src="../resources/media/pictures/01/01/02/instruction/01.png" onclick="play('instruction_02_audio')" />
             </div>
             <div><i>Cliquer sur la lettre ou le mot pour entendre la prononciation <i class="fas fa-volume-up"></i></i>
             </div>
@@ -107,7 +107,7 @@
                 <p class="arabic" onclick="play('02_13_audio')">بَ</p>
                 <p class="arabic" onclick="play('02_14_audio')">مِـ</p>
                 <p class="arabic" onclick="play('02_15_audio')">أَبِي</p>
-                <p class="arabic" onclick="play('02_16_audio')">أُمّي</p>
+                <p class="arabic" onclick="play('02_16_audio')">أُمِّي</p>
                 <p class="arabic" onclick="play('02_17_audio')">شُبَّاكٌ</p>
                 <p class="arabic" onclick="play('02_18_audio')">طَمَاطِمٌ</p>
                 <p class="arabic" onclick="play('02_19_audio')">بَابٌ</p>
@@ -123,7 +123,7 @@
         <section>
             <br />
             <div class="right">
-                <img src="../resources/media/pictures/02/01/03/instruction/01.png" onclick="play('instruction_03_01_audio')" />
+                <img src="../resources/media/pictures/02/01/03/instruction/01.png" onclick="play('instruction_03_audio')" />
             </div>
             <div><i>Cliquer sur l'image pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
             <div class="wrapper">
@@ -154,10 +154,10 @@
             </div>
             <div class="wrapper">
                 <div class="wrapper">
-                    <img src="../resources/media/pictures/02/01/04/01.png" />
-                    <img src="../resources/media/pictures/02/01/04/02.png" />
-                    <img src="../resources/media/pictures/02/01/04/03.png" />
-                    <img src="../resources/media/pictures/02/01/04/04.png" />
+                    <img src="../resources/media/pictures/02/01/04/01.png" onclick="play('04_01_audio')"/>
+                    <img src="../resources/media/pictures/02/01/04/02.png" onclick="play('04_02_audio')"/>
+                    <img src="../resources/media/pictures/02/01/04/03.png" onclick="play('04_03_audio')"/>
+                    <img src="../resources/media/pictures/02/01/04/04.png" onclick="play('04_04_audio')"/>
                 </div>
                 <div id="04-correction" class="wrapper hide">
                     <img src="../resources/media/pictures/02/01/04/correction/01.png" />
@@ -251,35 +251,54 @@
             </div>
         </footer>
     </div>
-    <audio id="title_01_audio" src="../resources/media/audio/02/01/title/01.ogg"></audio>
-    <audio id="title_02_audio" src="../resources/media/audio/02/01/title/02.ogg"></audio>
-    <audio id="instruction_01_audio" src="../resources/media/audio/02/01/01/instruction/01.ogg"></audio>
+    <audio id="title_01_audio" src="../resources/media/audio/02/01/title/01.mp3"></audio>
     <audio id="01_01_audio" src="../resources/media/audio/02/01/01/01.ogg"></audio>
     <audio id="01_02_audio" src="../resources/media/audio/02/01/01/02.ogg"></audio>
     <audio id="01_03_audio" src="../resources/media/audio/02/01/01/03.ogg"></audio>
     <audio id="01_04_audio" src="../resources/media/audio/02/01/01/04.ogg"></audio>
     <audio id="01_05_audio" src="../resources/media/audio/02/01/01/05.ogg"></audio>
-    <audio id="01_06_audio" src="../resources/media/audio/02/01/01/06.ogg"></audio>
-    <audio id="01_07_audio" src="../resources/media/audio/02/01/01/07.ogg"></audio>
-    <audio id="01_08_audio" src="../resources/media/audio/02/01/01/08.ogg"></audio>
-    <audio id="01_09_audio" src="../resources/media/audio/02/01/01/09.ogg"></audio>
-    <audio id="01_10_audio" src="../resources/media/audio/02/01/01/10.ogg"></audio>
-    <audio id="01_11_audio" src="../resources/media/audio/02/01/01/11.ogg"></audio>
-    <audio id="instruction_02_01_audio" src="../resources/media/audio/02/01/02/instruction/01.ogg"></audio>
-    <audio id="instruction_02_02_audio" src="../resources/media/audio/02/01/02/instruction/02.ogg"></audio>
+    <audio id="instruction_02_audio" src="../resources/media/audio/02/01/02/instruction/01.ogg"></audio>
     <audio id="02_01_audio" src="../resources/media/audio/02/01/02/01.ogg"></audio>
     <audio id="02_02_audio" src="../resources/media/audio/02/01/02/02.ogg"></audio>
     <audio id="02_03_audio" src="../resources/media/audio/02/01/02/03.ogg"></audio>
     <audio id="02_04_audio" src="../resources/media/audio/02/01/02/04.ogg"></audio>
     <audio id="02_05_audio" src="../resources/media/audio/02/01/02/05.ogg"></audio>
     <audio id="02_06_audio" src="../resources/media/audio/02/01/02/06.ogg"></audio>
+    <audio id="02_07_audio" src="../resources/media/audio/02/01/02/07.ogg"></audio>
+    <audio id="02_08_audio" src="../resources/media/audio/02/01/02/08.ogg"></audio>
+    <audio id="02_09_audio" src="../resources/media/audio/02/01/02/09.ogg"></audio>
+    <audio id="02_10_audio" src="../resources/media/audio/02/01/02/10.ogg"></audio>
+    <audio id="02_11_audio" src="../resources/media/audio/02/01/02/11.ogg"></audio>
+    <audio id="02_12_audio" src="../resources/media/audio/02/01/02/12.ogg"></audio>
+    <audio id="02_13_audio" src="../resources/media/audio/02/01/02/13.ogg"></audio>
+    <audio id="02_14_audio" src="../resources/media/audio/02/01/02/14.ogg"></audio>
+    <audio id="02_15_audio" src="../resources/media/audio/02/01/02/15.ogg"></audio>
+    <audio id="02_16_audio" src="../resources/media/audio/02/01/02/16.ogg"></audio>
+    <audio id="02_17_audio" src="../resources/media/audio/02/01/02/17.ogg"></audio>
+    <audio id="02_18_audio" src="../resources/media/audio/02/01/02/18.ogg"></audio>
+    <audio id="02_19_audio" src="../resources/media/audio/02/01/02/19.ogg"></audio>
+    <audio id="02_20_audio" src="../resources/media/audio/02/01/02/20.ogg"></audio>
+    <audio id="02_21_audio" src="../resources/media/audio/02/01/02/21.ogg"></audio>
+    <audio id="02_22_audio" src="../resources/media/audio/02/01/02/22.ogg"></audio>
+    <audio id="02_23_audio" src="../resources/media/audio/02/01/02/23.ogg"></audio>
+    <audio id="02_24_audio" src="../resources/media/audio/02/01/02/24.ogg"></audio>
     <audio id="instruction_03_audio" src="../resources/media/audio/02/01/03/instruction/01.ogg"></audio>
+    <audio id="03_01_audio" src="../resources/media/audio/02/01/03/01.ogg"></audio>
+    <audio id="03_02_audio" src="../resources/media/audio/02/01/03/02.ogg"></audio>
+    <audio id="03_03_audio" src="../resources/media/audio/02/01/03/03.ogg"></audio>
+    <audio id="03_04_audio" src="../resources/media/audio/02/01/03/04.ogg"></audio>
+    <audio id="03_05_audio" src="../resources/media/audio/02/01/03/05.ogg"></audio>
+    <audio id="03_06_audio" src="../resources/media/audio/02/01/03/06.ogg"></audio>
     <audio id="instruction_04_audio" src="../resources/media/audio/02/01/04/instruction/01.ogg"></audio>
+    <audio id="04_01_audio" src="../resources/media/audio/02/01/04/01.ogg"></audio>
+    <audio id="04_02_audio" src="../resources/media/audio/02/01/04/02.ogg"></audio>
+    <audio id="04_03_audio" src="../resources/media/audio/02/01/04/03.ogg"></audio>
+    <audio id="04_04_audio" src="../resources/media/audio/02/01/04/04.ogg"></audio>
     <audio id="instruction_05_audio" src="../resources/media/audio/02/01/05/instruction/01.ogg"></audio>
     <audio id="instruction_06_audio" src="../resources/media/audio/02/01/06/instruction/01.ogg"></audio>
-    <audio id="06_01_audio" src="../resources/media/audio/02/01/06/01.ogg"></audio>
-    <audio id="06_02_audio" src="../resources/media/audio/02/01/06/02.ogg"></audio>
-    <audio id="06_03_audio" src="../resources/media/audio/02/01/06/03.ogg"></audio>
+    <audio id="instruction_07_audio" src="../resources/media/audio/02/01/07/instruction/01.ogg"></audio>
+    <audio id="07_01_audio" src="../resources/media/audio/02/01/07/01.ogg"></audio>
+    <audio id="07_02_audio" src="../resources/media/audio/02/01/07/02.ogg"></audio>
 </body>
 <script type="text/javascript" src="../resources/js/audio.js"></script>
 <script type="text/javascript" src="../resources/js/hide_display.js"></script>
