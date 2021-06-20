@@ -154,20 +154,34 @@
             </div>
             <div class="wrapper">
                 <div class="wrapper">
-                    <img src="../resources/media/pictures/02/01/04/01.png" onclick="play('04_01_audio')"/>
-                    <img src="../resources/media/pictures/02/01/04/02.png" onclick="play('04_02_audio')"/>
-                    <img src="../resources/media/pictures/02/01/04/03.png" onclick="play('04_03_audio')"/>
-                    <img src="../resources/media/pictures/02/01/04/04.png" onclick="play('04_04_audio')"/>
-                </div>
-                <div id="04-correction" class="wrapper hide">
-                    <img src="../resources/media/pictures/02/01/04/correction/01.png" />
-                    <img src="../resources/media/pictures/02/01/04/correction/02.png" />
-                    <img src="../resources/media/pictures/02/01/04/correction/03.png" />
-                    <img src="../resources/media/pictures/02/01/04/correction/04.png" />
+                    <div class="wrapper-column">
+                        <img src="../resources/media/pictures/02/01/04/01.png" onclick="play('04_01_audio')"/>
+                        <div class="04-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/04/correction/01.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper-column">
+                        <img src="../resources/media/pictures/02/01/04/02.png" onclick="play('04_02_audio')"/>
+                        <div class="04-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/04/correction/02.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper-column">
+                        <img src="../resources/media/pictures/02/01/04/03.png" onclick="play('04_03_audio')"/>
+                        <div class="04-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/04/correction/03.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper-column">
+                        <img src="../resources/media/pictures/02/01/04/04.png" onclick="play('04_04_audio')"/>
+                        <div class="04-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/04/correction/04.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <button class="btn btn-primary" id="show-04-correction"
-                    onclick="display('show-04-correction', '04-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
+                    onclick="displayBlockClass('show-04-correction', '04-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
             <br />
             <br />
         </section>
@@ -181,28 +195,58 @@
             </div>
             <div class="wrapper">
                 <div class="wrapper-column">
-                    <img src="../resources/media/pictures/02/01/05/01.png" />
-                    <img src="../resources/media/pictures/02/01/05/02.png" />
-                    <img src="../resources/media/pictures/02/01/05/03.png" />
-                    <img src="../resources/media/pictures/02/01/05/04.png" />
-                    <img src="../resources/media/pictures/02/01/05/05.png" />
-                    <img src="../resources/media/pictures/02/01/05/06.png" />
-                    <img src="../resources/media/pictures/02/01/05/07.png" />
-                    <img src="../resources/media/pictures/02/01/05/08.png" />
-                </div>
-                <div id="05-correction" class="wrapper-column hide">
-                    <img src="../resources/media/pictures/02/01/05/correction/01.png" />
-                    <img src="../resources/media/pictures/02/01/05/correction/02.png" />
-                    <img src="../resources/media/pictures/02/01/05/correction/03.png" />
-                    <img src="../resources/media/pictures/02/01/05/correction/04.png" />
-                    <img src="../resources/media/pictures/02/01/05/correction/05.png" />
-                    <img src="../resources/media/pictures/02/01/05/correction/06.png" />
-                    <img src="../resources/media/pictures/02/01/05/correction/07.png" />
-                    <img src="../resources/media/pictures/02/01/05/correction/08.png" />
+                    <div class="wrapper" style="flex-wrap: nowrap">
+                        <img src="../resources/media/pictures/02/01/05/01.png" />
+                        <div class="05-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/05/correction/01.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper" style="flex-wrap: nowrap">
+                        <img src="../resources/media/pictures/02/01/05/02.png" />
+                        <div class="05-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/05/correction/02.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper" style="flex-wrap: nowrap">
+                        <img src="../resources/media/pictures/02/01/05/03.png" />
+                        <div class="05-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/05/correction/03.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper" style="flex-wrap: nowrap">
+                        <img src="../resources/media/pictures/02/01/05/04.png" />
+                        <div class="05-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/05/correction/04.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper" style="flex-wrap: nowrap">
+                        <img src="../resources/media/pictures/02/01/05/05.png" />
+                        <div class="05-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/05/correction/05.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper" style="flex-wrap: nowrap">
+                        <img src="../resources/media/pictures/02/01/05/06.png" />
+                        <div class="05-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/05/correction/06.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper" style="flex-wrap: nowrap">
+                        <img src="../resources/media/pictures/02/01/05/07.png" />
+                        <div class="05-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/05/correction/07.png" />
+                        </div>
+                    </div>
+                    <div class="wrapper" style="flex-wrap: nowrap">
+                        <img src="../resources/media/pictures/02/01/05/08.png" />
+                        <div class="05-correction wrapper hide">
+                            <img src="../resources/media/pictures/02/01/05/correction/08.png" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <button class="btn btn-primary" id="show-05-correction"
-                    onclick="display('show-05-correction', '05-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
+                    onclick="displayBlockClass('show-05-correction', '05-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
             <br />
             <br />
         </section>
