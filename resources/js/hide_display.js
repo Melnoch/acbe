@@ -1,12 +1,27 @@
 function display(buttonId, blockId) {
-    var button = document.getElementById(buttonId);
-    var correction = document.getElementById(blockId);
+    let button = document.getElementById(buttonId);
+    let correction = document.getElementById(blockId);
     if (correction.classList.contains('hide')) {
         correction.classList.remove('hide');
         button.innerHTML = "<i class=\"far fa-eye-slash\"></i> Cacher la correction"
         return;
     }
     correction.classList.add('hide');
+    button.innerHTML = "<i class=\"fas fa-search\"></i> Montrer la correction"
+}
+
+function displayCorrectionHideDefault(buttonId, defaultId, correctionId) {
+    let button = document.getElementById(buttonId);
+    let exercise = document.getElementById(defaultId);
+    let correction = document.getElementById(correctionId);
+    if (correction.classList.contains('hide')) {
+        correction.classList.remove('hide');
+        exercise.classList.add('hide');
+        button.innerHTML = "<i class=\"far fa-eye-slash\"></i> Cacher la correction"
+        return;
+    }
+    correction.classList.add('hide');
+    exercise.classList.remove('hide');
     button.innerHTML = "<i class=\"fas fa-search\"></i> Montrer la correction"
 }
 

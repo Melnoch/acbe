@@ -256,21 +256,15 @@
                 <img src="../resources/media/pictures/02/01/06/instruction/01.png" onclick="play('instruction_06_audio')" />
             </div>
             <div class="wrapper">
-                <div class="wrapper-column">
+                <div id="06-default" class="wrapper-column">
                     <img src="../resources/media/pictures/02/01/06/01.png" />
-                    <img src="../resources/media/pictures/02/01/06/02.png" />
-                    <img src="../resources/media/pictures/02/01/06/03.png" />
-                    <img src="../resources/media/pictures/02/01/06/04.png" />
                 </div>
                 <div id="06-correction" class="wrapper-column hide">
                     <img src="../resources/media/pictures/02/01/06/correction/01.png" />
-                    <img src="../resources/media/pictures/02/01/06/correction/02.png" />
-                    <img src="../resources/media/pictures/02/01/06/correction/03.png" />
-                    <img src="../resources/media/pictures/02/01/06/correction/04.png" />
                 </div>
             </div>
             <button class="btn btn-primary" id="show-06-correction"
-                    onclick="display('show-06-correction', '06-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
+                    onclick="displayCorrectionHideDefault('show-06-correction', '06-default', '06-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
             <br />
             <br />
         </section>
