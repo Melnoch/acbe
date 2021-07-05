@@ -109,3 +109,9 @@ div > h2 > .accordion-button:not(.collapsed) {
     margin: 0px 10px 0px 10px;
     color: lightseagreen;
 }
+.volume {
+    font-size: 1.5em;
+}
+.page {
+    color: darkgray;
+}
