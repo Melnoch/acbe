@@ -27,9 +27,6 @@ section:nth-child(even) {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-end;
-}
-.wrapper-column.center {
     align-items: center;
 }
 .wrapper-tight {
@@ -114,4 +111,7 @@ div > h2 > .accordion-button:not(.collapsed) {
 }
 .page {
     color: darkgray;
+}
+.red-border {
+    border: red 2px solid;
 }
