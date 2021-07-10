@@ -109,9 +109,6 @@ div > h2 > .accordion-button:not(.collapsed) {
 .volume {
     font-size: 1.5em;
 }
-.page {
-    color: darkgray;
-}
 .red-border {
     border: red 2px solid;
 }
