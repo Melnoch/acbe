@@ -125,7 +125,7 @@
                 <div class="wrapper-column">
                     <img src="../resources/media/pictures/01/20/02/01.png" onclick="play('02_01_audio')" />
                     <div class="02-correction wrapper hide">
-                        <img src="../resources/media/pictures/01/20/02/correction/01.png" />
+                        <img class="red-border" src="../resources/media/pictures/01/20/02/correction/01.png" />
                     </div>
                 </div>
                 <div class="wrapper-column">
@@ -137,7 +137,7 @@
                 <div class="wrapper-column">
                     <img src="../resources/media/pictures/01/20/02/03.png" onclick="play('02_03_audio')" />
                     <div class="02-correction wrapper hide">
-                        <img class="red-border" src="../resources/media/pictures/01/20/02/correction/03.png" />
+                        <img src="../resources/media/pictures/01/20/02/correction/03.png" />
                     </div>
                 </div>
                 <div class="wrapper-column">
@@ -237,22 +237,15 @@
                 <img src="../resources/media/pictures/01/20/05/instruction/01.png" onclick="play('instruction_05_audio')" />
             </div>
             <div class="wrapper">
-                <div class="wrapper-column">
+                <div id="05-default" class="wrapper-column">
                     <img src="../resources/media/pictures/01/20/05/01.png" />
-                    <img src="../resources/media/pictures/01/20/05/02.png" />
-                    <img src="../resources/media/pictures/01/20/05/03.png" />
-                    <img src="../resources/media/pictures/01/20/05/04.png" />
                 </div>
                 <div id="05-correction" class="wrapper-column hide">
                     <img src="../resources/media/pictures/01/20/05/correction/01.png" />
-                    <img src="../resources/media/pictures/01/20/05/correction/02.png" />
-                    <img src="../resources/media/pictures/01/20/05/correction/03.png" />
-                    <img src="../resources/media/pictures/01/20/05/correction/04.png" />
                 </div>
             </div>
             <button class="btn btn-primary" id="show-05-correction"
-                onclick="display('show-05-correction', '05-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
-            <br />
+                    onclick="displayCorrectionHideDefault('show-05-correction', '05-default', '05-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
             <br />
             <br />
             <div class="right">

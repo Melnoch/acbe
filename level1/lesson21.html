@@ -83,7 +83,7 @@
             <div class="right">
                 <img src="../resources/media/pictures/01/21/01/instruction/01.png" onclick="play('instruction_01_audio')" />
             </div>
-            <div><i>Cliquer sur la lettre ou le mot pour entendre la prononciation <i class="fas fa-volume-up"></i></i>
+            <div class="volume"><i>Cliquer sur la lettre ou le mot pour entendre la prononciation <i class="fas fa-volume-up"></i></i>
             </div>
             <div class="wrapper">
                 <img src="../resources/media/pictures/01/21/01/01.png" onclick="play('01_01_audio')" />
@@ -116,35 +116,67 @@
             </div>
             <br />
             <br />
+            <div class="right">
+                <i><b>p.92-93</b></i>
+            </div>
         </section>
         <section>
+            <br/>
+            <div class="right">
+                <img src="../resources/media/pictures/01/21/02/instruction/01.png" onclick="play('instruction_02_01_audio')"/>
+            </div>
+            <div class="right">
+                <img src="../resources/media/pictures/01/21/02/instruction/02.png" onclick="play('instruction_02_02_audio')"/>
+            </div>
+            <div><i class="volume">Cliquer sur l'image pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
+            <div class="wrapper">
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/21/02/01.png" onclick="play('02_01_audio')" />
+                    <div class="02-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/21/02/correction/01.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/21/02/02.png" onclick="play('02_02_audio')" />
+                    <div class="02-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/21/02/correction/02.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/21/02/03.png" onclick="play('02_03_audio')" />
+                    <div class="02-correction wrapper hide">
+                        <img src="../resources/media/pictures/01/21/02/correction/03.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/21/02/04.png" onclick="play('02_04_audio')" />
+                    <div class="02-correction wrapper hide">
+                        <img src="../resources/media/pictures/01/21/02/correction/04.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/21/02/05.png" onclick="play('02_05_audio')" />
+                    <div class="02-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/21/02/correction/05.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/21/02/06.png" onclick="play('02_06_audio')" />
+                    <div class="02-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/21/02/correction/06.png" />
+                    </div>
+                </div>
+            </div>
+            <br />
+            <button class="btn btn-primary" id="show-02-correction"
+                    onclick="displayBlockClass('show-02-correction', '02-correction')"><i class="fas fa-search"></i> Montrer la
+                correction</button>
+            <br />
+            <br />
             <br />
             <div class="right">
-                <img src="../resources/media/pictures/01/21/02/instruction/01.png" onclick="play('instruction_02_audio')" />
+                <i><b>p.93-94</b></i>
             </div>
-            <div><i>Cliquer sur l'image pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
-            <div class="wrapper">
-                <img src="../resources/media/pictures/01/21/02/01.png" onclick="play('02_01_audio')" />
-                <img src="../resources/media/pictures/01/21/02/02.png" onclick="play('02_02_audio')" />
-                <img src="../resources/media/pictures/01/21/02/03.png" onclick="play('02_03_audio')" />
-                <img src="../resources/media/pictures/01/21/02/04.png" onclick="play('02_04_audio')" />
-                <img src="../resources/media/pictures/01/21/02/05.png" onclick="play('02_05_audio')" />
-                <img src="../resources/media/pictures/01/21/02/06.png" onclick="play('02_06_audio')" />
-            </div>
-            <button class="btn btn-primary" id="show-02-correction"
-                    onclick="display('show-02-correction', '02-correction')"><i class="fas fa-search"></i> Montrer la
-                correction</button>
-            <div id="02-correction" class="wrapper hide">
-                <img src="../resources/media/pictures/01/21/02/correction/01.png" />
-                <img src="../resources/media/pictures/01/21/02/correction/02.png" />
-                <img src="../resources/media/pictures/01/21/02/correction/03.png" />
-                <img src="../resources/media/pictures/01/21/02/correction/04.png" />
-                <img src="../resources/media/pictures/01/21/02/correction/05.png" />
-                <img src="../resources/media/pictures/01/21/02/correction/06.png" />
-            </div>
-            <br />
-            <br />
-            <br />
         </section>
         <section>
             <div class="right">
@@ -172,6 +204,9 @@
                     onclick="display('show-03-correction', '03-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
             <br />
             <br />
+            <div class="right">
+                <i><b>p.94</b></i>
+            </div>
         </section>
         <section>
             <br />
@@ -200,6 +235,9 @@
                     onclick="display('show-04-correction', '04-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
             <br />
             <br />
+            <div class="right">
+                <i><b>p.94-95</b></i>
+            </div>
         </section>
         <section>
             <br />
@@ -207,33 +245,27 @@
                 <img src="../resources/media/pictures/01/21/05/instruction/01.png" onclick="play('instruction_05_audio')" />
             </div>
             <div class="wrapper">
-                <div class="wrapper-column">
+                <div id="05-default" class="wrapper-column">
                     <img src="../resources/media/pictures/01/21/05/01.png" />
-                    <img src="../resources/media/pictures/01/21/05/02.png" />
-                    <img src="../resources/media/pictures/01/21/05/03.png" />
-                    <img src="../resources/media/pictures/01/21/05/04.png" />
-                    <img src="../resources/media/pictures/01/21/05/05.png" />
                 </div>
                 <div id="05-correction" class="wrapper-column hide">
                     <img src="../resources/media/pictures/01/21/05/correction/01.png" />
-                    <img src="../resources/media/pictures/01/21/05/correction/02.png" />
-                    <img src="../resources/media/pictures/01/21/05/correction/03.png" />
-                    <img src="../resources/media/pictures/01/21/05/correction/04.png" />
-                    <img src="../resources/media/pictures/01/21/05/correction/05.png" />
                 </div>
             </div>
             <button class="btn btn-primary" id="show-05-correction"
-                onclick="display('show-05-correction', '05-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
+                    onclick="displayCorrectionHideDefault('show-05-correction', '05-default', '05-correction')"><i class="fas fa-search"></i> Montrer la correction</button>
             <br />
             <br />
-            <br />
+            <div class="right">
+                <i><b>p.95</b></i>
+            </div>
         </section>
         <section>
             <br />
             <div class="right">
                 <img src="../resources/media/pictures/01/21/06/instruction/01.png" onclick="play('instruction_06_audio')" />
             </div>
-            <div><i>Cliquer sur l'image pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
+            <div class="volume"><i>Cliquer sur l'image ou le mot pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
             <div class="wrapper">
                 <img src="../resources/media/pictures/01/21/06/01.png" onclick="play('06_01_audio')" />
                 <img src="../resources/media/pictures/01/21/06/02.png" onclick="play('06_02_audio')" />
@@ -246,12 +278,16 @@
             <br />
             <br />
             <br />
+            <div class="right">
+                <i><b>p.96</b></i>
+            </div>
         </section>
         <section>
             <br />
             <div class="right">
                 <img src="../resources/media/pictures/01/21/07/instruction/01.png" onclick="play('instruction_07_audio')" />
             </div>
+            <div class="volume"><i>Cliquer sur la phrase pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
             <br />
             <div class="wrapper">
                 <div class="wrapper-column">
@@ -272,6 +308,9 @@
             <br />
             <br />
             <br />
+            <div class="right">
+                <i><b>p.96</b></i>
+            </div>
         </section>
         <footer class="footer">
             <div class="container text-center">
