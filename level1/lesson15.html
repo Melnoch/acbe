@@ -39,6 +39,7 @@
                                 <li><a class="dropdown-item" href="lesson05.html">Leçon 05 - خ</a></li>
                                 <li><a class="dropdown-item" href="lesson06.html">Leçon 06 - ت</a></li>
                                 <li><a class="dropdown-item" href="lesson08.html">Leçon 08 - ك</a></li>
+                                <li><a class="dropdown-item" href="lesson09.html">Leçon 09 - ج</a></li>
                                 <li><a class="dropdown-item active" href="lesson15.html"><b>Leçon 15 - ع</b></a></li>
                                 <li><a class="dropdown-item" href="lesson16.html">Leçon 16 - ف</a></li>
                                 <li><a class="dropdown-item" href="lesson17.html">Leçon 17 - ل</a></li>
@@ -139,36 +140,59 @@
             </div>
         </section>
         <section>
-            <br/>
+            <br />
             <div class="right">
-                <img src="../resources/media/pictures/01/15/03/instruction.png" onclick="play('instruction_03_audio')"/>
+                <img src="../resources/media/pictures/01/15/03/instruction.png" onclick="play('instruction_03_audio')" />
             </div>
-            <div><i class="volume">Cliquer sur l'image pour entendre la prononciation <i class="fas fa-volume-up"></i></i>
-            </div>
+            <div><i class="volume">Cliquer sur l'image pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
+            <br />
             <div class="wrapper">
-                <img src="../resources/media/pictures/01/15/03/01.png" onclick="play('03_01_audio')" />
-                <img src="../resources/media/pictures/01/15/03/02.png" onclick="play('03_02_audio')" />
-                <img src="../resources/media/pictures/01/15/03/03.png" onclick="play('03_03_audio')" />
-                <img src="../resources/media/pictures/01/15/03/04.png" onclick="play('03_04_audio')" />
-                <img src="../resources/media/pictures/01/15/03/05.png" onclick="play('03_05_audio')" />
-                <img src="../resources/media/pictures/01/15/03/06.png" onclick="play('03_06_audio')" />
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/15/03/01.png" onclick="play('03_01_audio')" />
+                    <div class="03-correction wrapper hide">
+                        <img src="../resources/media/pictures/01/15/03/correction/01.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/15/03/02.png" onclick="play('03_02_audio')" />
+                    <div class="03-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/15/03/correction/02.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/15/03/03.png" onclick="play('03_03_audio')" />
+                    <div class="03-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/15/03/correction/03.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/15/03/04.png" onclick="play('03_04_audio')" />
+                    <div class="03-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/15/03/correction/04.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/15/03/05.png" onclick="play('03_05_audio')" />
+                    <div class="03-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/15/03/correction/05.png" />
+                    </div>
+                </div>
+                <div class="wrapper-column">
+                    <img src="../resources/media/pictures/01/15/03/06.png" onclick="play('03_06_audio')" />
+                    <div class="03-correction wrapper hide">
+                        <img class="red-border" src="../resources/media/pictures/01/15/03/correction/06.png" />
+                    </div>
+                </div>
             </div>
+            <br />
             <button class="btn btn-primary" id="show-03-correction"
-                    onclick="display('show-03-correction', '03-correction')"><i class="fas fa-search"></i> Montrer la
+                    onclick="displayBlockClass('show-03-correction', '03-correction')"><i class="fas fa-search"></i> Montrer la
                 correction</button>
-            <div id="03-correction" class="wrapper hide">
-                <img src="../resources/media/pictures/01/15/03/correction/01.png" />
-                <img class="red-border" src="../resources/media/pictures/01/15/03/correction/02.png" />
-                <img class="red-border" src="../resources/media/pictures/01/15/03/correction/03.png" />
-                <img class="red-border" src="../resources/media/pictures/01/15/03/correction/04.png" />
-                <img class="red-border" src="../resources/media/pictures/01/15/03/correction/05.png" />
-                <img class="red-border" src="../resources/media/pictures/01/15/03/correction/06.png" />
-            </div>
-            <br/>
-            <br/>
-            <br/>
+            <br />
+            <br />
+            <br />
             <div class="right">
-                <i><b>p.64 - 65</b></i>
+                <i><b>p.64-65</b></i>
             </div>
         </section>
         <section>
