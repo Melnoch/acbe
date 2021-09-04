@@ -1,0 +1,25 @@
+{
+  "name": "acbe-package",
+  "version": "1.0.0",
+  "description": "package acbe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melnoch/acbe.git"
+  },
+  "author": "Melnoch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://https://github.com/Melnoch/acbe/issues"
+  },
+  "homepage": "https://https://github.com/Melnoch/acbe#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-file-include": "^2.3.0"
+  }
+}

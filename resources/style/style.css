@@ -112,3 +112,6 @@ div > h2 > .accordion-button:not(.collapsed) {
 .red-border {
     border: red 2px solid;
 }
+li > a.bold {
+    font-weight: bold;
+}
