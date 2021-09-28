@@ -32,6 +32,7 @@ gulp.task('fileinclude', function() {
         'html/level1/lesson08.html',
         'html/level1/lesson09.html',
         'html/level1/lesson10.html',
+        'html/level1/lesson11.html',
         'html/level1/lesson15.html',
         'html/level1/lesson16.html',
         'html/level1/lesson17.html',
