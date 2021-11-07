@@ -72,7 +72,8 @@ gulp.task('fileinclude', function() {
         'html/level2/lesson11.html',
         'html/level2/lesson12.html',
         'html/level2/lesson13.html',
-        'html/level2/lesson14.html'
+        'html/level2/lesson14.html',
+        'html/level2/lesson15.html'
     ])
         .pipe(fileinclude({
             prefix: '@@',
