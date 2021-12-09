@@ -15,7 +15,10 @@ gulp.task('fileinclude', function() {
             basepath: '@file'
         }))
         .pipe(gulp.dest('./'));
-    gulp.src(['html/common/alphabet.html'])
+    gulp.src([
+        'html/common/alphabet.html',
+        'html/common/game-letter.html'
+    ])
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
