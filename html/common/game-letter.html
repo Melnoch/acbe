@@ -19,10 +19,8 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/alphabet.html">Alphabet</a>
+                            <a class="nav-link active" aria-current="page" href="alphabet.html">Alphabet</a>
                         </li>
-                        @@include('../navigation/level2/navigation-level-1.html')
-                        @@include('../navigation/level1/navigation-level-2.html')
                     </ul>
                 </div>
             </div>
@@ -30,7 +28,7 @@
     </header>
     <div class="container">
         <section>
-            <div><i>Cliquer sur la lettre ou le mot pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
+            <div><i>Cliquer sur la lettre pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
             <div id="letter-1" class="wrapper hide">
                 <img src="../resources/media/pictures/common/alphabet/01.png" onclick="play('01_01_audio')"/>
             </div>
@@ -119,10 +117,15 @@
                 <img src="../resources/media/pictures/common/alphabet/28.png" onclick="play('01_28_audio')"/>
             </div>
             <div>
-            <button class="btn btn-primary" style="margin-right: 10px"
-                    onclick="shuffle()"><i class="fas fa-search"></i> Montrer la lettre suivante</button>
-            <button class="btn btn-warning" style="margin-left: 10px"
-                    onclick="displayTajwid()"><i class="fas fa-search"></i> Montrer le point de prononciation et les caractéristiques</button>
+                <div>
+                <button class="btn btn-primary"
+                        onclick="shuffle()"><i class="fas fa-search"></i> Montrer la lettre suivante</button>
+                </div>
+                <br />
+                <div id="tajwid-button" class="hide">
+                    <button class="btn btn-warning"
+                            onclick="displayTajwid()"><i class="fas fa-search"></i> Montrer le point de prononciation et les caractéristiques</button>
+                </div>
             </div>
             <div id="tajwid" class="wrapper hide">
                 <div class="wrapper-column">
@@ -133,10 +136,11 @@
                     <div class="wrapper"><b>Caractéristiques :</b></div>
                     <div id="characteristic1" class="wrapper arabic tajwid"></div>
                     <div id="characteristic2" class="wrapper arabic tajwid"></div>
-<!--                    <div class="wrapper arabic tajwid">الإِسْتِفَال</div>-->
-<!--                    <div class="wrapper arabic tajwid">الإِنْفِتَاح</div>-->
-<!--                    <div class="wrapper arabic tajwid">الإِذْلَاق</div>-->
-<!--                    <div class="wrapper arabic tajwid">القَلْقَلَة</div>-->
+                    <div id="characteristic3" class="wrapper arabic tajwid"></div>
+                    <div id="characteristic4" class="wrapper arabic tajwid"></div>
+                    <div id="characteristic5" class="wrapper arabic tajwid"></div>
+                    <div id="characteristic6" class="wrapper arabic tajwid"></div>
+                    <div id="characteristic7" class="wrapper arabic tajwid"></div>
                 </div>
             </div>
             <br/>
