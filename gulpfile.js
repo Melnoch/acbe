@@ -17,7 +17,9 @@ gulp.task('fileinclude', function() {
         .pipe(gulp.dest('./'));
     gulp.src([
         'html/common/alphabet.html',
-        'html/common/game-letter.html'
+        'html/common/game-letter-lvl1.html',
+        'html/common/game-letter-lvl2.html',
+        'html/common/game-letter-tajwid.html'
     ])
         .pipe(fileinclude({
             prefix: '@@',

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+@@include('../links/lesson/header-links.html')
+<head>
+    <meta charset="UTF-8">
+    <title>Alphabet</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../resources/media/pictures/favicon/favicon-32x32.png" /> LACM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="alphabet.html">Alphabet</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <div><i>Cliquer sur la lettre pour entendre la prononciation <i class="fas fa-volume-up"></i></i></div>
+
+            <div class="wrapper" style="flex-direction: row">
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" role="button" id="dropdownLesson" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sélectionner la dernière leçon vue
+                    </button>
+                    <div class="dropdown-menu" id="dropdownLessonList" aria-labelledby="dropdownLesson">
+                        <a class="dropdown-item" id="0" href="#">Leçon 01 - ب</a>
+                        <a class="dropdown-item" id="1" href="#">Leçon 02 - م</a>
+                        <a class="dropdown-item" id="2" href="#">Leçon 03 - ر</a>
+                        <a class="dropdown-item" id="3" href="#">Leçon 04 - أ</a>
+                        <a class="dropdown-item" id="4" href="#">Leçon 05 - خ</a>
+                        <a class="dropdown-item" id="5" href="#">Leçon 06 - ت</a>
+                        <a class="dropdown-item" id="6" href="#">Leçon 07 - ز</a>
+                        <a class="dropdown-item" id="7" href="#">Leçon 08 - ك</a>
+                        <a class="dropdown-item" id="8" href="#">Leçon 09 - ج</a>
+                        <a class="dropdown-item" id="9" href="#">Leçon 10 - ث</a>
+                        <a class="dropdown-item" id="10" href="#">Leçon 11 - د</a>
+                        <a class="dropdown-item" id="11" href="#">Leçon 12 - س</a>
+                        <a class="dropdown-item" id="12" href="#">Leçon 13 - ض</a>
+                        <a class="dropdown-item" id="13" href="#">Leçon 14 - ح</a>
+                        <a class="dropdown-item" id="14" href="#">Leçon 15 - ع</a>
+                        <a class="dropdown-item" id="15" href="#">Leçon 16 - ف</a>
+                        <a class="dropdown-item" id="16" href="#">Leçon 17 - ل</a>
+                        <a class="dropdown-item" id="17" href="#">Leçon 18 - ذ</a>
+                        <a class="dropdown-item" id="18" href="#">Leçon 19 - ش</a>
+                        <a class="dropdown-item" id="19" href="#">Leçon 20 - ص</a>
+                        <a class="dropdown-item" id="20" href="#">Leçon 21 - غ</a>
+                        <a class="dropdown-item" id="21" href="#">Leçon 22 - ق</a>
+                        <a class="dropdown-item" id="22" href="#">Leçon 23 - ن</a>
+                        <a class="dropdown-item" id="23" href="#">Leçon 24 - ط</a>
+                        <a class="dropdown-item" id="24" href="#">Leçon 25 - ه</a>
+                        <a class="dropdown-item" id="25" href="#">Leçon 26 - و</a>
+                        <a class="dropdown-item" id="26" href="#">Leçon 27 - ظ</a>
+                        <a class="dropdown-item" id="27" href="#">Leçon 28 - ي</a>
+                    </div>
+                </div>
+                <div class="form-group form-check wrapper">
+                    <input type="checkbox" class="form-check-input" id="start">
+                    <label class="form-check-label" for="start">Début</label>
+                </div>
+                <div class="form-group form-check wrapper">
+                    <input type="checkbox" class="form-check-input" id="middle">
+                    <label class="form-check-label" for="middle">Milieu</label>
+                </div>
+                <div class="form-group form-check wrapper">
+                    <input type="checkbox" class="form-check-input" id="end">
+                    <label class="form-check-label" for="end">Fin</label>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="wrapper">
+                <p id="letter" class="arabic" style="font-size: 10em; padding: 0"></p>
+            </div>
+            <br/>
+            <br/>
+            <div style="text-align: center;">
+                <div>
+                    <button class="btn btn-primary"
+                            onclick="shuffleLetters()"><i class="fas fa-search"></i> Montrer la lettre suivante</button>
+                </div>
+                <br />
+            </div>
+            <br/>
+        </section>
+        <footer class="footer">
+            <div class="container text-center">
+                <label class="text-muted">N'oubliez pas l'intention</label>
+            </div>
+        </footer>
+    </div>
+    <audio id="default-sound" src = "../resources/media/audio/default.mp3"></audio>
+    <audio id="3_audio" src="../resources/media/audio/common/alphabet/01.mp3"></audio>
+    <audio id="0_audio" src="../resources/media/audio/common/alphabet/02.mp3"></audio>
+    <audio id="5_audio" src="../resources/media/audio/common/alphabet/03.mp3"></audio>
+    <audio id="9_audio" src="../resources/media/audio/common/alphabet/04.mp3"></audio>
+    <audio id="8_audio" src="../resources/media/audio/common/alphabet/05.mp3"></audio>
+    <audio id="13_audio" src="../resources/media/audio/common/alphabet/06.mp3"></audio>
+    <audio id="4_audio" src="../resources/media/audio/common/alphabet/07.mp3"></audio>
+    <audio id="10_audio" src="../resources/media/audio/common/alphabet/08.mp3"></audio>
+    <audio id="17_audio" src="../resources/media/audio/common/alphabet/09.mp3"></audio>
+    <audio id="2_audio" src="../resources/media/audio/common/alphabet/10.mp3"></audio>
+    <audio id="6_audio" src="../resources/media/audio/common/alphabet/11.mp3"></audio>
+    <audio id="11_audio" src="../resources/media/audio/common/alphabet/12.mp3"></audio>
+    <audio id="18_audio" src="../resources/media/audio/common/alphabet/13.mp3"></audio>
+    <audio id="19_audio" src="../resources/media/audio/common/alphabet/14.mp3"></audio>
+    <audio id="12_audio" src="../resources/media/audio/common/alphabet/15.mp3"></audio>
+    <audio id="23_audio" src="../resources/media/audio/common/alphabet/16.mp3"></audio>
+    <audio id="26_audio" src="../resources/media/audio/common/alphabet/17.mp3"></audio>
+    <audio id="14_audio" src="../resources/media/audio/common/alphabet/18.mp3"></audio>
+    <audio id="20_audio" src="../resources/media/audio/common/alphabet/19.mp3"></audio>
+    <audio id="15_audio" src="../resources/media/audio/common/alphabet/20.mp3"></audio>
+    <audio id="21_audio" src="../resources/media/audio/common/alphabet/21.mp3"></audio>
+    <audio id="7_audio" src="../resources/media/audio/common/alphabet/22.mp3"></audio>
+    <audio id="16_audio" src="../resources/media/audio/common/alphabet/23.mp3"></audio>
+    <audio id="1_audio" src="../resources/media/audio/common/alphabet/24.mp3"></audio>
+    <audio id="22_audio" src="../resources/media/audio/common/alphabet/25.mp3"></audio>
+    <audio id="24_audio" src="../resources/media/audio/common/alphabet/26.mp3"></audio>
+    <audio id="25_audio" src="../resources/media/audio/common/alphabet/27.mp3"></audio>
+    <audio id="27_audio" src="../resources/media/audio/common/alphabet/28.mp3"></audio>
+</body>
+@@include('../links/footer-links.html')
+@@include('../links/lesson-links.html')
+<script type="text/javascript" src="../resources/js/shuffleLettersLvl1.js"></script>
+</html>

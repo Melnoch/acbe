@@ -1,5 +1,5 @@
 let id = 0;
-function shuffle() {
+function shuffleLetterTajwid() {
     if (id === 0) {
         document.getElementById('tajwid-button').classList.remove('hide');
     }
