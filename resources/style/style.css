@@ -90,14 +90,32 @@ div > h2 > .accordion-button:not(.collapsed) {
 .arabic {
     font-size: 4em;
     font-family: 'Scheherazade', serif;
-    padding: 1em;
 }
 .arabic.tajwid {
     padding: 0em;
 }
 .invocation {
-    font-size: 4em;
-    font-family: 'Scheherazade', serif;
+    color: brown;
+}
+.quote {
+    color: black;
+}
+.ayah {
+    color: darkred;
+}
+.hadith {
+    color: darkgreen;
+    font-weight: bold;
+}
+.transliterre {
+    font-style: italic;
+}
+.savant {
+    color: darkblue;
+}
+.report {
+    color: darkblue;
+    font-size: 2em;
 }
 .repeat {
     margin: 0px 10px 0px 10px;

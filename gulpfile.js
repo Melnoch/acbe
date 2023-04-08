@@ -4,7 +4,8 @@ function defaultTask(cb) {
 }
 
 exports.default = defaultTask
-
+// *********************
+// To run command: gulp fileinclude
 var fileinclude = require('gulp-file-include'),
     gulp = require('gulp');
 
