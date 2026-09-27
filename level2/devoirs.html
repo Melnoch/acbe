@@ -1,0 +1,276 @@
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Mes devoirs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --paper:#FBF4E3;
+            --paper-line:#E4D7B8;
+            --ink:#22314A;
+            --ink-soft:#5B6478;
+            --coral:#E0623B;
+            --coral-soft:#FBE2D6;
+            --teal:#276E6E;
+            --teal-soft:#DCEEEC;
+            --ochre:#C98A2C;
+            --ochre-soft:#F6E7CC;
+            --ring:#8C7A54;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+            box-sizing: border-box;
+        }
+        @media (prefers-color-scheme: dark){
+            :root:not([data-theme="light"]){
+                --paper:#20261F;
+                --paper-line:#333B2E;
+                --ink:#F3EEDD;
+                --ink-soft:#B9C0AE;
+                --coral-soft:#3B2A22;
+                --teal-soft:#1F3230;
+                --ochre-soft:#3A2E17;
+            }
+        }
+        :root[data-theme="dark"]{
+            --paper:#20261F;
+            --paper-line:#333B2E;
+            --ink:#F3EEDD;
+            --ink-soft:#B9C0AE;
+            --coral-soft:#3B2A22;
+            --teal-soft:#1F3230;
+            --ochre-soft:#3A2E17;
+        }
+        html{ scroll-padding-top: env(safe-area-inset-top, 0px); }
+        *{ box-sizing:border-box; }
+        body{
+            margin:0;
+            background:var(--paper);
+            color:var(--ink);
+            font-family:'Work Sans', sans-serif;
+            line-height:1.5;
+        }
+        .sheet{
+            max-width:760px;
+            margin:0 auto;
+            padding:2.5rem 1.5rem 4rem;
+            position:relative;
+        }
+        /* spiral binding */
+        .rings{
+            display:flex;
+            justify-content:space-evenly;
+            padding:0 1rem;
+            margin-bottom:-0.6rem;
+        }
+        .rings span{
+            width:14px;height:22px;
+            border-radius:50%;
+            border:3px solid var(--ring);
+            opacity:.55;
+        }
+        header{
+            text-align:center;
+            padding:1.6rem 1rem 1.4rem;
+            border-bottom:2px dashed var(--paper-line);
+            margin-bottom:2rem;
+        }
+        h1{
+            font-family:'Baloo 2', sans-serif;
+            font-weight:800;
+            font-size:clamp(2rem, 6vw, 2.7rem);
+            margin:0 0 .3rem;
+            letter-spacing:.2px;
+        }
+        header p{
+            color:var(--ink-soft);
+            margin:0;
+            font-size:1.05rem;
+        }
+        .date-badge{
+            display:inline-block;
+            margin-top:.9rem;
+            padding:.35rem .9rem;
+            border-radius:99px;
+            background:var(--ochre-soft);
+            color:var(--ink);
+            font-weight:600;
+            font-size:.9rem;
+        }
+        section.subject{
+            margin-bottom:2.2rem;
+            border-radius:18px;
+            overflow:hidden;
+            box-shadow:0 1px 0 var(--paper-line);
+            border:2px solid var(--paper-line);
+        }
+        .subject-head{
+            display:flex;
+            align-items:center;
+            gap:.7rem;
+            padding:1rem 1.3rem;
+            font-family:'Baloo 2', sans-serif;
+            font-weight:700;
+            font-size:1.35rem;
+        }
+        .subject-head .glyph{
+            font-size:1.5rem;
+            line-height:1;
+        }
+        .subject-body{
+            padding:1.2rem 1.4rem 1.5rem;
+            background:var(--paper);
+        }
+        .arabe .subject-head{ background:var(--coral-soft); color:var(--coral); }
+        .religion .subject-head{ background:var(--teal-soft); color:var(--teal); }
+        .quran .subject-head{ background:var(--ochre-soft); color:var(--ochre); }
+
+        .task-group{
+            margin-bottom:1rem;
+        }
+        .task-group:last-child{ margin-bottom:0; }
+        .task-group h3{
+            font-family:'Baloo 2', sans-serif;
+            font-size:1rem;
+            font-weight:600;
+            margin:0 0 .5rem;
+            color:var(--ink-soft);
+        }
+        ul.tasks{
+            list-style:none;
+            margin:0;
+            padding:0;
+            display:flex;
+            flex-direction:column;
+            gap:.55rem;
+        }
+        ul.tasks li{
+            display:flex;
+            align-items:flex-start;
+            gap:.7rem;
+        }
+        .bullet{
+            flex:0 0 auto;
+            width:10px;height:10px;
+            margin-top:.5rem;
+            border-radius:50%;
+            background:currentColor;
+        }
+        .arabe .bullet{ color:var(--coral); }
+        .religion .bullet{ color:var(--teal); }
+        .quran .bullet{ color:var(--ochre); }
+        span.task-label{
+            font-size:1rem;
+        }
+        .link-chip{
+            display:inline-flex;
+            align-items:center;
+            gap:.4rem;
+            margin-top:.7rem;
+            padding:.5rem .9rem;
+            border-radius:10px;
+            background:var(--paper);
+            border:1.5px solid currentColor;
+            font-weight:600;
+            font-size:.92rem;
+            text-decoration:none;
+        }
+        .arabe .link-chip{ color:var(--coral); }
+        .religion .link-chip{ color:var(--teal); }
+        .link-chip:hover{ background:currentColor; color:var(--paper) !important; }
+
+        .note{
+            font-style:italic;
+            color:var(--ink-soft);
+            margin:0;
+        }
+
+        .progress-wrap{
+            display:flex;
+            align-items:center;
+            gap:.8rem;
+            margin:0 0 2rem;
+            padding:.9rem 1.2rem;
+            background:var(--paper);
+            border:2px solid var(--paper-line);
+            border-radius:14px;
+        }
+        .progress-track{
+            flex:1;
+            height:10px;
+            border-radius:99px;
+            background:var(--paper-line);
+            overflow:hidden;
+        }
+        .progress-fill{
+            height:100%;
+            width:0%;
+            background:linear-gradient(90deg, var(--coral), var(--teal), var(--ochre));
+            transition:width .3s ease;
+            border-radius:99px;
+        }
+        .progress-label{
+            font-family:'Baloo 2', sans-serif;
+            font-weight:700;
+            font-size:.95rem;
+            white-space:nowrap;
+        }
+        footer{
+            text-align:center;
+            color:var(--ink-soft);
+            font-size:.85rem;
+            padding-top:1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="sheet">
+    <div class="rings" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <header>
+        <h1>Mes devoirs</h1>
+        <p>Arabe · Religion · Qour'an</p>
+        <span class="date-badge">Pour le 04 Octobre 2026</span>
+    </header>
+
+    <section class="subject arabe">
+        <div class="subject-head"><span class="glyph">✎</span> Arabe</div>
+        <div class="subject-body">
+            <div class="task-group">
+                <h3>Livre de lecture</h3>
+                <ul class="tasks">
+                    <li><span class="bullet"></span><span class="task-label">Lire 7 fois les lignes jaunes et vertes page 4</span></li>
+                    <li><span class="bullet"></span><span class="task-label">Recopier les 8 mots page 5</span></li>
+                    <li><span class="bullet"></span><span class="task-label"><b>Bonus :</b> Lire le dialogue pages 7 et 8</span></li>
+                </ul>
+                <a class="link-chip" href="https://fiches-interactives-arabes.fr/level2/lesson01.html" target="_blank" rel="noopener">🔗 Fiche interactive pour s'aider</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="subject religion">
+        <div class="subject-head"><span class="glyph">🕋</span> Religion</div>
+        <div class="subject-body">
+            <ul class="tasks">
+                <li><span class="bullet"></span><span class="task-label">Apprendre la leçon 2 page 18</span></li>
+                <li><span class="bullet"></span><span class="task-label">Apprendre l’invocation page 20 en arabe et/ou en français</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="subject quran">
+        <div class="subject-head"><span class="glyph">📖</span> Qour'an</div>
+        <div class="subject-body">
+            <p class="note">Reviser  Al-F<u>a</u>ti<u>h</u>ah : versets 1 à 3</p>
+        </div>
+    </section>
+
+    <footer>Fais chaque devoir pour progresser — bon courage ! 💪💪💪</footer>
+</div>
+
+
+
+</body></html>
